@@ -1,0 +1,383 @@
+.modal {
+  font-family: "Gilroy-Bold" Arial, Helvetica, sans-serif;
+  display: none;
+  overflow: hidden;
+  inset: 0;
+  background-color: rgba(26, 26, 27, 0.9);
+  touch-action: pan-y;
+  touch-action: pan-x;
+  position: fixed;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  height: 40%;
+  padding: 3% 3% 3% 3%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(17, 56, 140);
+  background-size: contain;
+  box-sizing: border-box;
+  border-radius: 10px;
+  opacity: 0.9;
+  touch-action: pan-y;
+  touch-action: pan-x;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box > input {
+  width: 100%;
+  padding: 0.3vmin 1vmin;
+  font-size: 2vmin;
+  text-transform: capitalize;
+  color: #fff;
+  margin-bottom: 9vmin;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2vmin;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box > input:focus ~ label,
+.login-box .user-box > input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: red;
+  font-size: 1.5vmin;
+}
+
+/* ///////////////////// кнопки */
+
+#nextBtn {
+  display: inline-block;
+  width: 25%;
+  align-self: center;
+  font-size: 2.5vmin;
+  background-color: inherit;
+  color: #fff;
+  padding: 0.5vmin;
+  border: 0;
+  border-radius: 0.5vmin;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#nextBtn:hover {
+  background-color: #454546;
+  transition: 0.4s;
+}
+
+#prevBtn {
+  display: inline-block;
+  width: 25%;
+  align-self: center;
+  font-size: 2.5vmin;
+  background-color: inherit;
+  color: #fff;
+  padding: 0.5vmin;
+  border: 0;
+  border-radius: 0.5vmin;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#prevBtn:hover {
+  background-color: #454546;
+  transition: 0.4s;
+}
+
+.sendBtn {
+  display: none;
+  width: 25%;
+  align-self: center;
+  font-size: 2.5vmin;
+  background-color: inherit;
+  color: #fff;
+  padding: 0.5vmin;
+  border: 0;
+  border-radius: 0.5vmin;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.sendBtn:hover {
+  background-color: #454546;
+  transition: 0.4s;
+}
+
+.closeModalBtn {
+  position: absolute;
+  right: 28%;
+  top: 27%;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 2vmin rgba(17, 56, 140) inset !important;
+  -webkit-text-fill-color: #fff;
+  caret-color: #fff;
+}
+
+.tab {
+  display: none;
+}
+
+.step {
+  height: 5px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: rgba(64, 62, 62, 0.8);
+  border: none;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  background-color: red;
+  opacity: 1;
+}
+
+.step.finish {
+  background-color: red;
+}
+
+.wrapBtn {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.bar {
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.check__header {
+  font-size: 2.5vmin;
+  color: rgb(244, 240, 240);
+}
+
+.wrap_check {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.wrap__check2 {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.check {
+  margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrap_check3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 7vmin;
+}
+
+.check1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4%;
+}
+
+.check__item {
+  font-size: 1.5vmin;
+  color: #fff;
+  text-align: center;
+}
+
+.lb1 {
+  margin: 1.5vmin 0;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox + .lb1,
+.checkbox + .lb1::before,
+.checkbox + .lb1::after {
+  transition: all 0.3s;
+}
+
+.checkbox + .lb1 {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.checkbox + .lb1::before {
+  display: block;
+  content: attr(data-offlabel);
+  position: absolute;
+  top: 9px;
+  right: 3px;
+  color: black;
+  font-size: 14px;
+}
+
+.checkbox + .lb1::after {
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  width: 26px;
+  height: 26px;
+  background-color: white;
+}
+
+.checkbox:checked + .lb1::before {
+  content: attr(data-onlabel);
+  left: 4px;
+  top: 7px;
+  right: auto;
+  color: #fff;
+}
+
+.checkbox:checked + .lb1::after {
+  left: 32px;
+  background-color: #f7f7f7;
+}
+
+.checkbox + .lb1 {
+  background-color: #454546;
+}
+.checkbox:checked + .lb1 {
+  background-color: orangered;
+}
+.checkbox:checked + .lb1::before {
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .login-box {
+    width: 65%;
+    height: 40%;
+  }
+  .closeModalBtn {
+    right: 15%;
+    top: 27%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login-box {
+    padding-top: 6%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .login-box {
+    padding-top: 7%;
+    width: 70%;
+    height: 30%;
+  }
+  .closeModalBtn {
+    top: 32%;
+    right: 11%;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .login-box {
+    box-sizing: border-box;
+    top: 30%;
+    width: 95vw;
+    height: 40vh;
+  }
+  .closeModalBtn {
+    top: 47%;
+    right: 2%;
+  }
+  .login-box .user-box > input {
+    padding-left: 2vmin;
+    font-size: 4vmin;
+  }
+  .login-box .user-box > label {
+    font-size: 4vmin;
+  }
+  #prevBtn,
+  #nextBtn,
+  .sendBtn {
+    font-size: 4vmin;
+    font-weight: 900;
+  }
+  .info p {
+    font-size: 3vmin;
+  }
+  .check__header {
+    font-size: 4.5vmin;
+  }
+  .check__item {
+    font-size: 2.5vmin;
+  }
+  .user-box:nth-child(1) {
+    margin-top: 15vmin;
+    margin-bottom: 10vmin;
+  }
+  .login-box .user-box > input:focus ~ label,
+  .login-box .user-box > input:valid ~ label {
+    font-size: 2.5vmin;
+  }
+  .check1 {
+    margin-top: 5%;
+  }
+  .wrap_check3 {
+    margin-bottom: 15vmin;
+  }
+}
+
+@media screen and (max-height: 570px) {
+  .user-box:nth-child(1) {
+    margin-top: 5vmin;
+    margin-bottom: 10vmin;
+  }
+  .check {
+    margin-top: 2vmin;
+  }
+  .login-box {
+    padding-top: 5%;
+  }
+  .info > p {
+    top: -45%;
+  }
+}

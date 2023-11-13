@@ -3,7 +3,293 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/home.css" />
+    <link rel="stylesheet" href="style/popup.css" />
     <title>НОК СПЕЦИАЛИСТОВ</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="title">
+        <p class="head">
+          нок <br />
+          специалистов
+        </p>
+        <div class="contact">
+          <a class="tel" href="tel:+79219892203">+7 (921) 989-22-03</a>
+          <p class="adress">г.Москва, м. Бауманская</p>
+        </div>
+      </div>
+      <div class="main">
+        <div class="item-box">
+          <p class="h1">получите</p>
+          <h1>сертификат нок</h1>
+          <p class="h2">подготовим к 100% сдаче экзамена</p>
+          <div class="wrap-item">
+            <div class="item">
+              <div class="circle"></div>
+              <p class="item-desc">
+                Независимая оценка для
+                <b
+                  >строителей, <br />
+                  проектировщиков и изыскателей</b
+                >
+              </p>
+            </div>
+            <div class="item">
+              <div class="circle"></div>
+              <p class="item-desc">
+                С нами Вы сдадите экзамен с первого раза, просто и легко! <br />
+                Или мы вернем вам деньги.
+              </p>
+            </div>
+            <div class="item">
+              <div class="circle"></div>
+              <p class="item-desc">
+                <b>Без портфолио</b> для проектировщиков и изыскателей
+              </p>
+            </div>
+          </div>
+          <button class="btn">рассчитать стоимость</button>
+        </div>
+        <div class="img">
+          <img src="./images/15118.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <form>
+      <div class="login-box">
+        <div class="tab">
+          <p class="check__header">Как вам будет удобно получить расчёт ?</p>
+          <div class="wrap_check3">
+            <div class="check1">
+              <input
+                class="check checkbox"
+                type="radio"
+                id="highload"
+                name="name"
+                value="БЕСПЛАТНАЯ консультация по телефону"
+                autocomplete="off"
+              />
+              <label
+                for="highload"
+                data-onlabel="да"
+                data-offlabel="нет"
+                class="lb1"
+              ></label>
+              <p class="check__item">
+                БЕСПЛАТНАЯ консультация <br />
+                по телефону
+              </p>
+            </div>
+            <div class="check1">
+              <input
+                class="check checkbox"
+                type="radio"
+                id="highload1"
+                name="name"
+                value="WhatsApp"
+                autocomplete="off"
+              />
+              <label
+                for="highload1"
+                data-onlabel="да"
+                data-offlabel="нет"
+                class="lb1"
+              ></label>
+              <p class="check__item">WhatsApp</p>
+            </div>
+            <div class="check1">
+              <input
+                class="check checkbox"
+                type="radio"
+                id="highload2"
+                name="name"
+                value="СМС"
+                autocomplete="off"
+              />
+              <label
+                for="highload2"
+                data-onlabel="да"
+                data-offlabel="нет"
+                class="lb1"
+              ></label>
+              <p class="check__item">СМС</p>
+            </div>
+          </div>
+          <div id="phone" class="user-box">
+            <input
+              id="tel"
+              class="maskphone"
+              name="tel"
+              required=""
+              autocomplete="tel"
+            />
+            <label for="tel">номер вашего телефона</label>
+          </div>
+        </div>
+        <div class="tab">
+          <p class="check__header">Кому необходимо пройти НОК?</p>
+          <div class="wrap_check3">
+            <div class="check1">
+              <input
+                class="check checkbox"
+                type="radio"
+                id="highload3"
+                name="name1"
+                value="Строителям"
+              />
+              <label
+                for="highload3"
+                data-onlabel="да"
+                data-offlabel="нет"
+                class="lb1"
+              ></label>
+              <p class="check__item">Строителям</p>
+            </div>
+            <div class="check1">
+              <input
+                class="check checkbox"
+                type="radio"
+                id="highload4"
+                name="name1"
+                value="Проектировщикам"
+              />
+              <label
+                for="highload4"
+                data-onlabel="да"
+                data-offlabel="нет"
+                class="lb1"
+              ></label>
+              <p class="check__item">Проектировщикам</p>
+            </div>
+            <div class="check1">
+              <input
+                class="check checkbox"
+                type="radio"
+                id="highload5"
+                name="name1"
+                value="Изыскателям"
+              />
+              <label
+                for="highload5"
+                data-onlabel="да"
+                data-offlabel="нет"
+                class="lb1"
+              ></label>
+              <p class="check__item">Изыскателям</p>
+            </div>
+            <div class="check1">
+              <input
+                class="check checkbox"
+                type="radio"
+                id="highload6"
+                name="name1"
+                value="Несколько направлений"
+              />
+              <label
+                for="highload6"
+                data-onlabel="да"
+                data-offlabel="нет"
+                class="lb1"
+              ></label>
+              <p class="check__item">Несколько направлений</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab">
+          <p class="check__header">Специалист состоит в реестре НРС?</p>
+          <div class="wrap_check3">
+            <div class="check1">
+              <input
+                class="check checkbox"
+                type="radio"
+                id="highload7"
+                name="name2"
+                value="Да"
+              />
+              <label
+                for="highload7"
+                data-onlabel="да"
+                data-offlabel="нет"
+                class="lb1"
+              ></label>
+              <p class="check__item">Да</p>
+            </div>
+            <div class="check1">
+              <input
+                class="check checkbox"
+                type="radio"
+                id="highload8"
+                name="name2"
+                value="Нет"
+              />
+              <label
+                for="highload8"
+                data-onlabel="да"
+                data-offlabel="нет"
+                class="lb1"
+              ></label>
+              <p class="check__item">Нет</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab">
+          <p class="check__header">Вы физическое или юридическое лицо?</p>
+          <div class="wrap_check3">
+            <div class="check1">
+              <input
+                class="check checkbox"
+                type="radio"
+                id="highload9"
+                name="name3"
+                value="Физическое лицо"
+              />
+              <label
+                for="highload9"
+                data-onlabel="да"
+                data-offlabel="нет"
+                class="lb1"
+              ></label>
+              <p class="check__item">Физическое лицо</p>
+            </div>
+            <div class="check1">
+              <input
+                class="check checkbox"
+                type="radio"
+                id="highload10"
+                name="name3"
+                value="Юридическое лицо"
+              />
+              <label
+                for="highload10"
+                data-onlabel="да"
+                data-offlabel="нет"
+                class="lb1"
+              ></label>
+              <p class="check__item">Юридическое лицо</p>
+            </div>
+          </div>
+        </div>
+        <div class="wrapBtn">
+          <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+            НАЗАД
+          </button>
+          <button type="button" id="nextBtn" onclick="nextPrev(1)">
+            ВПЕРЕД
+          </button>
+          <button class="sendBtn" type="submit">ВПЕРЕД</button>
+        </div>
+        <div class="bar">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+      </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
