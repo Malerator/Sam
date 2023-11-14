@@ -197,7 +197,10 @@ h1 {
     height: fit-content;
   }
   .item-desc {
-    font-size: 5vw;
+    font-size: 2.5vw;
+  }
+  .img img {
+    width: 270px;
   }
 }
 
@@ -210,7 +213,7 @@ h1 {
     flex-direction: column;
   }
   .img img {
-    width: 300px;
+    width: 250px;
   }
   .head {
     font-size: 5vw;
