@@ -325,6 +325,7 @@ input:-webkit-autofill:active {
   .login-box .user-box > input {
     padding-left: 2vmin;
     font-size: 4vmin;
+    margin-top: 5vmin;
   }
   .login-box .user-box > label {
     font-size: 4vmin;
