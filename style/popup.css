@@ -210,7 +210,7 @@ input:-webkit-autofill:active {
 }
 
 .check__item {
-  font-size: 1.5vmin;
+  font-size: 2vmin;
   color: #fff;
   text-align: center;
 }
@@ -342,10 +342,7 @@ input:-webkit-autofill:active {
     font-size: 4.5vmin;
   }
   .check__item {
-    font-size: 4vmin;
-  }
-  .check__item:nth-child(12) {
-    font-size: 1vmin;
+    font-size: 3vmin;
   }
   .user-box {
     margin-top: 12vmin;
