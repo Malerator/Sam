@@ -319,7 +319,7 @@ input:-webkit-autofill:active {
     height: 40vh;
   }
   .closeModalBtn {
-    top: 77%;
+    top: 67%;
     right: 2%;
   }
   .login-box .user-box > input {
