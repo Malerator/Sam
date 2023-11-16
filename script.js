@@ -50,12 +50,14 @@ form.addEventListener("submit", function (el) {
   let checkState1 = document.querySelector('input[name="name1"]:checked').value;
   let checkState2 = document.querySelector('input[name="name2"]:checked').value;
   let checkState3 = document.querySelector('input[name="name3"]:checked').value;
+  let checkState4 = document.querySelector('input[name="name4"]:checked').value;
 
   let message = `<b>ЗАЯВКА С САЙТА</b>\n\n`;
   message += `<b>Cпособ связи: </b>${checkState}\n`;
   message += `<b>Кому: </b>${checkState1}\n`;
   message += `<b>Состоит ли в реестре НРС: </b>${checkState2}\n`;
   message += `<b>Физ. или Юр.лицо: </b>${checkState3}\n`;
+  message += `<b>С пол. конф.: </b>${checkState4}\n`;
   message += `<b>Телефон:  </b>${this.tel.value}`;
   axios
     .post(URL, {
@@ -73,6 +75,8 @@ form.addEventListener("submit", function (el) {
       for (let i = 0; i < radio2.length; i++) radio2[i].checked = false;
       let radio3 = document.getElementsByName("name3");
       for (let i = 0; i < radio3.length; i++) radio3[i].checked = false;
+      let radio4 = document.getElementsByName("name4");
+      for (let i = 0; i < radio4.length; i++) radio4[i].checked = false;
       closeModal();
     })
     .catch((err) => {

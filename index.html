@@ -120,20 +120,10 @@
               <p class="check__item">СМС</p>
             </div>
           </div>
-          <div id="phone" class="user-box">
-            <input
-              id="tel"
-              class="maskphone"
-              name="tel"
-              required=""
-              autocomplete="tel"
-            />
-            <label for="tel">номер вашего телефона</label>
-          </div>
         </div>
         <div class="tab">
           <p class="check__header">Кому необходимо пройти НОК?</p>
-          <div class="wrap_check3">
+          <div class="wrap_check4">
             <div class="check1">
               <input
                 class="check checkbox"
@@ -274,6 +264,38 @@
             </div>
           </div>
         </div>
+        <div class="tab">
+          <p class="check__header">
+            Укажите контакт, куда прислать расчет стоимости
+          </p>
+          <div id="phone" class="user-box">
+            <input
+              id="tel"
+              class="maskphone"
+              name="tel"
+              required=""
+              autocomplete="tel"
+            />
+            <label for="tel">номер вашего телефона</label>
+          </div>
+          <div class="check">
+            <input
+              class="check checkbox"
+              type="radio"
+              id="highload11"
+              name="name4"
+              value="согласен"
+              autocomplete="off"
+            />
+            <label
+              for="highload11"
+              data-onlabel="да"
+              data-offlabel="нет"
+              class="lb1"
+            ></label>
+            <p class="check__item">Я согласен с политикой конфиденциальности</p>
+          </div>
+        </div>
         <div class="wrapBtn">
           <button type="button" id="prevBtn" onclick="nextPrev(-1)">
             НАЗАД
@@ -284,6 +306,7 @@
           <button class="sendBtn" type="submit">ВПЕРЕД</button>
         </div>
         <div class="bar">
+          <span class="step"></span>
           <span class="step"></span>
           <span class="step"></span>
           <span class="step"></span>
