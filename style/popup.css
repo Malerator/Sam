@@ -344,7 +344,7 @@ input:-webkit-autofill:active {
   .check__item {
     font-size: 4vmin;
   }
-  .check__item:nth-child(-1) {
+  .check__item:nth-child(12) {
     font-size: 1vmin;
   }
   .user-box {
