@@ -316,9 +316,6 @@ input:-webkit-autofill:active {
 }
 
 @media screen and (max-width: 428px) {
-  body {
-    overflow: hidden !important;
-  }
   .login-box {
     box-sizing: border-box;
     top: 50%;
