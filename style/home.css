@@ -14,7 +14,11 @@ body {
   padding: 2%;
   width: 90%;
   height: 80%;
-  background-color: floralwhite;
+  background: radial-gradient(
+    circle,
+    rgba(51, 109, 124, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -212,6 +216,9 @@ h1 {
 }
 
 @media screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
   .container {
     width: 100vw;
     height: 100vh;

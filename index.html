@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/home.css" />
@@ -12,7 +13,12 @@
     <title>НОК СПЕЦИАЛИСТОВ</title>
   </head>
   <body>
-    <div class="container">
+    <div
+      class="container"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="800"
+    >
       <div class="title">
         <p class="head">
           нок <br />
@@ -24,7 +30,12 @@
         </div>
       </div>
       <div class="main">
-        <div class="item-box">
+        <div
+          class="item-box"
+          data-aos="fade-down-right"
+          data-aos-duration="3000"
+          data-aos-easing="ease-out-quart"
+        >
           <p class="h1">получите</p>
           <h1>сертификат нок</h1>
           <p class="h2">подготовим к 100% сдаче экзамена</p>
@@ -55,7 +66,12 @@
           </div>
           <button class="btn">рассчитать стоимость</button>
         </div>
-        <div class="img">
+        <div
+          class="img"
+          data-aos="fade-down-left"
+          data-aos-duration="3000"
+          data-aos-easing="ease-out-quart"
+        >
           <img src="./images/15118.png" alt="" />
         </div>
       </div>
@@ -318,6 +334,10 @@
       </div>
     </form>
     <div class="privacy"></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="script.js"></script>
   </body>
