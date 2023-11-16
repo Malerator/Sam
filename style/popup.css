@@ -346,6 +346,7 @@ input:-webkit-autofill:active {
   }
   .user-box {
     margin-top: 15vmin;
+    margin-bottom: 5vmin;
   }
   .user-box:nth-child(1) {
     margin-bottom: 10vmin;
