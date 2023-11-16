@@ -1,4 +1,5 @@
 body {
+  overflow-x: hidden;
   width: 100vw;
   height: 100vh;
   background-color: rgb(186, 189, 188);
@@ -216,9 +217,6 @@ h1 {
 }
 
 @media screen and (max-width: 480px) {
-  body {
-    overflow-x: hidden;
-  }
   .container {
     width: 100vw;
     height: 100vh;
