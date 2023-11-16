@@ -117,7 +117,7 @@
 }
 
 .sendBtn:hover {
-  background-color: #454546;
+  background-color: rgb(57, 57, 131);
   transition: 0.4s;
 }
 
@@ -154,12 +154,12 @@ input:-webkit-autofill:active {
 }
 
 .step.active {
-  background-color: rgb(18, 137, 10);
+  background-color: rgb(57, 57, 131);
   opacity: 1;
 }
 
 .step.finish {
-  background-color: rgb(18, 137, 10);
+  background-color: rgb(57, 57, 131);
 }
 
 .wrapBtn {
@@ -273,13 +273,17 @@ input:-webkit-autofill:active {
 }
 
 .checkbox + .lb1 {
-  background-color: rgba(18, 137, 10, 0.2);
+  background-color: rgba(57, 57, 131, 0.3);
 }
 .checkbox:checked + .lb1 {
-  background-color: rgb(18, 137, 10);
+  background-color: rgb(57, 57, 131);
 }
 .checkbox:checked + .lb1::before {
   color: #fff;
+}
+
+.privacy_btn {
+  color: rgb(57, 57, 131);
 }
 
 @media screen and (max-width: 1024px) {
