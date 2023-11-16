@@ -344,6 +344,9 @@ input:-webkit-autofill:active {
   .check__item {
     font-size: 4vmin;
   }
+  .check__item1 {
+    font-size: 1vmin;
+  }
   .user-box {
     margin-top: 12vmin;
     margin-bottom: 5vmin;
