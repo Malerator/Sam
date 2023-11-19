@@ -6,10 +6,6 @@ body {
   font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
 }
 
-.s {
-  margin-top: 5vw;
-}
-
 .container {
   display: flex;
   flex-direction: column;
