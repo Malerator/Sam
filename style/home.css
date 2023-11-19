@@ -6,6 +6,10 @@ body {
   font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
 }
 
+.s {
+  margin-top: 5vw;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -13,7 +17,7 @@ body {
   margin: auto;
   padding: 2%;
   width: 90%;
-  height: 80%;
+  height: fit-content;
   background: radial-gradient(
     circle,
     rgba(51, 109, 124, 1) 0%,
@@ -219,7 +223,6 @@ h1 {
   .container {
     padding: 7%;
     width: 100vw;
-    height: 100vh;
   }
   .main {
     flex-direction: column;
