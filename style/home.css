@@ -88,8 +88,8 @@ h1 {
 .circle {
   box-sizing: border-box;
   margin-right: 0.3em;
-  width: 0.4em;
-  height: 0.4em;
+  width: 0.7em;
+  height: 0.7em;
   border: 3px solid rgb(57, 57, 131);
   border-radius: 50%;
 }
@@ -213,7 +213,7 @@ h1 {
 
 @media screen and (max-width: 480px) {
   .container {
-    padding: 7%;
+    padding: 7% 4%;
     width: 100vw;
   }
   .main {
@@ -247,7 +247,7 @@ h1 {
   }
   .circle {
     margin-right: 0.2em;
-    width: 0.3em;
-    height: 0.3em;
+    width: 0.5em;
+    height: 0.5em;
   }
 }
