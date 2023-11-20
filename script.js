@@ -39,6 +39,14 @@ function openModal() {
   popUp.style.display = "flex";
 }
 
+function openAlertOk() {
+  alertOk.style.display = "flex";
+}
+
+function closeAlertOk() {
+  alertOk.style.display = "none";
+}
+
 function closeModal() {
   popUp.style.display = "none";
 }
@@ -78,6 +86,7 @@ form.addEventListener("submit", function (el) {
       let radio4 = document.getElementsByName("name4");
       for (let i = 0; i < radio4.length; i++) radio4[i].checked = false;
       closeModal();
+      openAlertOk();
     })
     .catch((err) => {
       alert(
