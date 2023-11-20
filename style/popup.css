@@ -423,7 +423,10 @@ input:-webkit-autofill:active {
     margin-top: 5%;
   }
   .wrap_check3 {
-    margin-top: 15vmin;
+    margin-top: 12vw;
+  }
+  .wrap_check4 {
+    margin-top: 2vw;
   }
   .fa-reply {
     font-size: 4em;
