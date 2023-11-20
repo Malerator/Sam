@@ -61,16 +61,11 @@ body {
   font-size: 4vw;
 }
 
-.h2 {
-  font-size: 2vw;
-  margin-bottom: 1em;
-  line-height: 2.5vw;
-}
-
 h1 {
   font-size: 4vw;
   color: rgb(57, 57, 131);
   font-weight: 900;
+  margin-bottom: 1em;
 }
 
 .item-box {
@@ -249,9 +244,10 @@ h1 {
 
   h1 {
     font-size: 8vw;
+    margin-bottom: 1em;
   }
   .item-desc {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
   }
   .btn {
     margin-top: 8vw;
