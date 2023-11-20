@@ -86,6 +86,7 @@ h1 {
 }
 
 .circle {
+  box-sizing: border-box;
   margin-right: 0.3em;
   width: 0.4em;
   height: 0.4em;
