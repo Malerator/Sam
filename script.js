@@ -54,11 +54,20 @@ function closeModal() {
 form.addEventListener("submit", function (el) {
   el.preventDefault();
 
-  let checkState = document.querySelector('input[name="name"]:checked').value;
-  let checkState1 = document.querySelector('input[name="name1"]:checked').value;
-  let checkState2 = document.querySelector('input[name="name2"]:checked').value;
-  let checkState3 = document.querySelector('input[name="name3"]:checked').value;
-  let checkState4 = document.querySelector('input[name="name4"]:checked').value;
+  let checkState = document.querySelector('input[name="name"]:checked')?.value;
+  let checkState1 = document.querySelector(
+    'input[name="name1"]:checked'
+  )?.value;
+
+  let checkState2 = document.querySelector(
+    'input[name="name2"]:checked'
+  )?.value;
+  let checkState3 = document.querySelector(
+    'input[name="name3"]:checked'
+  )?.value;
+  let checkState4 = document.querySelector(
+    'input[name="name4"]:checked'
+  )?.value;
 
   let message = `<b>ЗАЯВКА С САЙТА</b>\n\n`;
   message += `<b>Cпособ связи: </b>${checkState}\n`;
@@ -134,6 +143,7 @@ function validateForm() {
   let x,
     y,
     i,
+    z,
     valid = true;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
@@ -143,8 +153,25 @@ function validateForm() {
       valid = false;
     }
   }
+  z = x[currentTab].querySelectorAll('input[type="radio"]');
+  if (y.length > 0) {
+    var checked = false;
+    for (i = 0; i < z.length; i++) {
+      if (z[i].checked) {
+        checked = true;
+        break;
+      }
+    }
+    if (!checked) {
+      document.querySelector(".login-box").className += " invalid";
+      document.querySelector(".warn").style.display = "block";
+      valid = false;
+    }
+  }
   if (valid) {
     document.getElementsByClassName("step")[currentTab].className += " finish";
+    document.querySelector(".login-box").classList.remove("invalid");
+    document.querySelector(".warn").style.display = "none";
   }
   return valid;
 }
@@ -179,24 +206,6 @@ document.addEventListener("DOMContentLoaded", function () {
       if (this.value.length == 2) this.value = "";
     } else {
       setCursorPosition(this, this.value.length);
-    }
-  }
-
-  function setCursorPosition(elem, pos) {
-    elem.focus();
-
-    if (elem.setSelectionRange) {
-      elem.setSelectionRange(pos, pos);
-      return;
-    }
-
-    if (elem.createTextRange) {
-      let range = elem.createTextRange();
-      range.collapse(true);
-      range.moveEnd("character", pos);
-      range.moveStart("character", pos);
-      range.select();
-      return;
     }
   }
 });

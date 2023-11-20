@@ -342,6 +342,18 @@ input:-webkit-autofill:active {
   margin-right: 12%;
 }
 
+.invalid {
+  outline: 1px solid red;
+  outline-offset: 7px;
+}
+
+.warn {
+  position: absolute;
+  top: -25px;
+  display: none;
+  color: red;
+}
+
 @media screen and (max-width: 1024px) {
   .login-box {
     width: 65%;
