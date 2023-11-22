@@ -1,6 +1,7 @@
 body {
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
   background-color: rgb(186, 189, 188);
   display: flex;
   font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
