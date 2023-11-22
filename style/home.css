@@ -4,7 +4,7 @@ body {
   background-color: rgb(186, 189, 188);
   display: flex;
   font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
-  /* touch-action: pan-y; */
+  touch-action: pan-y;
 }
 
 .container {
