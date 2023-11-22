@@ -400,7 +400,7 @@ input:-webkit-autofill:active {
     height: 40vh;
   }
   .closeModalBtn {
-    top: 67%;
+    top: 72%;
     right: 2%;
   }
   .login-box .user-box > input {
