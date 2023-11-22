@@ -29,4 +29,8 @@
   .privacy {
     width: 100%;
   }
+  .close_privacy {
+    top: 6%;
+    right: 9%;
+  }
 }
