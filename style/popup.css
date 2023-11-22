@@ -5,7 +5,7 @@
   inset: 0;
   background-color: rgba(26, 26, 27, 0.9);
   position: fixed;
-  /* touch-action: pan-y; */
+  touch-action: pan-y;
 }
 
 .login-box {
@@ -24,7 +24,7 @@
   box-sizing: border-box;
   border-radius: 10px;
   opacity: 0.9;
-  /* touch-action: pan-y; */
+  touch-action: pan-y;
 }
 
 .user-box {

@@ -4,7 +4,7 @@ body {
   background-color: rgb(186, 189, 188);
   display: flex;
   font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
-  /* touch-action: pan-y; */
+  touch-action: pan-y;
 }
 
 .container {
@@ -22,7 +22,7 @@ body {
   );
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  /* touch-action: pan-y; */
+  touch-action: pan-y;
 }
 
 .head {
@@ -217,8 +217,6 @@ h1 {
   .container {
     padding: 7% 4%;
     width: 96%;
-    width: fit-content;
-    height: fit-content;
   }
   .main {
     flex-direction: column;
