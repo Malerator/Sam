@@ -1,6 +1,7 @@
 .privacy_popup {
   display: flex;
   display: none;
+  width: 100vw;
   background-color: rgba(26, 26, 27);
   padding: 7%;
 }
