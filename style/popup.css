@@ -11,6 +11,7 @@ html {
   inset: 0;
   background-color: rgba(26, 26, 27, 0.9);
   touch-action: pan-y;
+  touch-action: pan-x;
 }
 
 .login-box {
@@ -30,6 +31,7 @@ html {
   border-radius: 10px;
   opacity: 0.9;
   touch-action: pan-y;
+  touch-action: pan-x;
 }
 
 .user-box {
