@@ -51,8 +51,6 @@ form.addEventListener("click", (event) => event.stopPropagation());
 function openModal() {
   popUp.style.display = "flex";
   body.style.overflow = "hidden";
-  body.style.touchAction = "pan-y";
-  body.style.touchAction = "pan-x";
 }
 
 function openAlertOk() {

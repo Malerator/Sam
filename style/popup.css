@@ -17,7 +17,7 @@
   width: 40%;
   height: 40%;
   padding: 3%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) !important;
   background: radial-gradient(
     circle,
     rgba(51, 109, 124, 1) 0%,
