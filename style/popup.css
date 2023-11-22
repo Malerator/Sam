@@ -5,6 +5,7 @@
   inset: 0;
   background-color: rgba(26, 26, 27, 0.9);
   position: fixed;
+  touch-action: pan-y;
 }
 
 .login-box {

@@ -3,6 +3,7 @@
   background-color: rgba(26, 26, 27);
   padding: 7%;
   overflow: hidden;
+  touch-action: pan-y;
 }
 
 .privacy {
