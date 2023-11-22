@@ -24,3 +24,9 @@
   right: 9%;
   color: blanchedalmond;
 }
+
+@media screen and (max-width: 428px) {
+  .privacy {
+    width: 90vw;
+  }
+}
