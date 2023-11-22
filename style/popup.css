@@ -16,7 +16,6 @@
   height: 40%;
   padding: 3%;
   transform: translate(-50%, -50%);
-  /* background-color: rgb(133, 135, 137); */
   background: radial-gradient(
     circle,
     rgba(51, 109, 124, 1) 0%,
@@ -392,6 +391,7 @@ input:-webkit-autofill:active {
     top: 50%;
     width: 95vw;
     height: 40vh;
+    touch-action: pan-y;
   }
   .closeModalBtn {
     top: 80%;
