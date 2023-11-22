@@ -316,8 +316,8 @@ input:-webkit-autofill:active {
   font-size: 5vmin;
   position: absolute;
   font-size: 6em;
-  top: 13%;
-  left: 80%;
+  top: 7%;
+  right: 7%;
   background: none;
   border: 0;
   color: #f7f2f2;
