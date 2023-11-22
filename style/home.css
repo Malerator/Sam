@@ -7,6 +7,14 @@ body {
   touch-action: pan-y;
 }
 
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+html {
+  overflow-y: scroll !important;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -214,6 +222,9 @@ h1 {
 }
 
 @media screen and (max-width: 480px) {
+  /* body[style*="overflow: hidden"] {
+    margin-right: 17px;
+  } */
   .container {
     padding: 7% 4%;
     width: 96%;

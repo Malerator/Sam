@@ -50,6 +50,7 @@ form.addEventListener("click", (event) => event.stopPropagation());
 
 function openModal() {
   popUp.style.display = "flex";
+  body.style.overflow = "hidden";
 }
 
 function openAlertOk() {
@@ -70,6 +71,7 @@ function closeAlertOk() {
 
 function closeModal() {
   popUp.style.display = "none";
+  body.style.overflow = "initial";
 }
 
 function closePrivacy() {
