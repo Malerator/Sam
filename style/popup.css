@@ -1,25 +1,17 @@
 .modal {
-  /* font-family: "Gilroy-Bold" Arial, Helvetica, sans-serif;
+  font-family: "Gilroy-Bold" Arial, Helvetica, sans-serif;
   display: none;
   position: fixed;
   height: 100vh;
   overflow: hidden;
   inset: 0;
   background-color: rgba(26, 26, 27, 0.9);
-  touch-action: pan-y;
-  touch-action: pan-x; */
-  font-family: "Gilroy-Bold" Arial, Helvetica, sans-serif;
-  display: none;
-  overflow: hidden;
-  inset: 0;
-  background-color: rgba(237, 225, 225, 0.9);
-  touch-action: pan-y;
-  touch-action: pan-x;
-  position: fixed;
+  /* touch-action: pan-y; */
+  /* touch-action: pan-x; */
 }
 
 .login-box {
-  /* position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   width: 40%;
@@ -34,25 +26,8 @@
   box-sizing: border-box;
   border-radius: 10px;
   opacity: 0.9;
-  touch-action: pan-y;
+  /* touch-action: pan-y;
   touch-action: pan-x; */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 40%;
-  height: 40%;
-  padding: 3% 3% 3% 3%;
-  transform: translate(-50%, -50%);
-  background-blend-mode: multiply;
-  background-color: rgb(0, 0, 0, 0.8);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  box-sizing: border-box;
-  border-radius: 10px;
-  opacity: 0.9;
-  touch-action: pan-y;
-  touch-action: pan-x;
 }
 
 .user-box {
@@ -477,7 +452,7 @@ input:-webkit-autofill:active {
   }
 }
 
-/* @media screen and (max-height: 570px) {
+@media screen and (max-height: 570px) {
   .user-box:nth-child(1) {
     margin-top: 5vmin;
     margin-bottom: 10vmin;
@@ -491,4 +466,4 @@ input:-webkit-autofill:active {
   .info > p {
     top: -45%;
   }
-} */
+}

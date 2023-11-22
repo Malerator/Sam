@@ -4,7 +4,7 @@ body {
   background-color: rgb(186, 189, 188);
   display: flex;
   font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
-  touch-action: pan-y;
+  /* touch-action: pan-y; */
 }
 
 .container {
@@ -14,9 +14,9 @@ body {
   margin: auto;
   padding: 2%;
   width: 90%;
-  /* height: fit-content; */
-  height: 100vh;
-  height: calc(var(--vios, 1vh) * 100);
+  height: fit-content;
+  /* height: 100vh;
+  height: calc(var(--vios, 1vh) * 100); */
   background: radial-gradient(
     circle,
     rgba(51, 109, 124, 1) 0%,
