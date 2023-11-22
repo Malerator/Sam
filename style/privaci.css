@@ -1,5 +1,27 @@
-.privacy {
+.privacy_popup {
   display: none;
+  background-color: rgba(26, 26, 27);
+  padding: 7%;
+  overflow-x: none;
+}
+
+.privacy {
+  margin: auto;
+  padding: 5%;
+  box-sizing: border-box;
+  background-color: rgb(189, 193, 196);
   width: 90%;
   height: fit-content;
+  border-radius: 5px;
+}
+
+.privacy_btn {
+  cursor: pointer;
+}
+
+.close_privacy {
+  position: fixed;
+  top: 9%;
+  right: 9%;
+  color: blanchedalmond;
 }

@@ -3,7 +3,7 @@
   display: none;
   overflow: hidden;
   inset: 0;
-  background-color: rgba(26, 26, 27);
+  background-color: rgba(26, 26, 27, 0.9);
   position: fixed;
 }
 
@@ -13,10 +13,14 @@
   left: 50%;
   width: 40%;
   height: 40%;
-  padding: 3% 3% 3% 3%;
+  padding: 3%;
   transform: translate(-50%, -50%);
-  background-color: rgb(133, 135, 137);
-  background-size: contain;
+  /* background-color: rgb(133, 135, 137); */
+  background: radial-gradient(
+    circle,
+    rgba(51, 109, 124, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
   box-sizing: border-box;
   border-radius: 10px;
   opacity: 0.9;
@@ -352,6 +356,11 @@ input:-webkit-autofill:active {
   top: -25px;
   display: none;
   color: red;
+}
+
+.check.checkbox:required {
+  outline: 1px solid red;
+  outline-offset: 1px;
 }
 
 @media screen and (max-width: 1024px) {

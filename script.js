@@ -15,7 +15,19 @@ img.src = "./images/close.svg";
 img.width = "20";
 img.height = "20";
 
+const img1 = document.createElement("img");
+img1.src = "./images/close.svg";
+img1.width = "25";
+img1.height = "25";
+img1.className = "close_privacy";
+
+const body = document.querySelector("body");
+
+const container = document.querySelector(".container");
+
 const alertOk = document.querySelector(".tab2");
+
+const privacyPopUp = document.querySelector(".privacy_popup");
 
 const sendBtn = document.querySelector(".sendBtn");
 
@@ -25,6 +37,7 @@ const CHAT_ID = "-1001695833016";
 
 const URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
+privacyPopUp.append(img1);
 closeBtn.append(img);
 form.append(closeBtn);
 popUp.append(form);
@@ -43,6 +56,13 @@ function openAlertOk() {
   alertOk.style.display = "flex";
 }
 
+function openPrivacy() {
+  container.style.display = "none";
+  privacyPopUp.style.display = "flex";
+  body.style.backgroundColor = "rgb(26, 26, 27)";
+  closeModal();
+}
+
 function closeAlertOk() {
   alertOk.style.display = "none";
 }
@@ -51,23 +71,22 @@ function closeModal() {
   popUp.style.display = "none";
 }
 
+function closePrivacy() {
+  container.style.display = "flex";
+  privacyPopUp.style.display = "none";
+  body.style.backgroundColor = "rgb(186, 189, 188)";
+
+  openModal();
+}
+
 form.addEventListener("submit", function (el) {
   el.preventDefault();
 
-  let checkState = document.querySelector('input[name="name"]:checked')?.value;
-  let checkState1 = document.querySelector(
-    'input[name="name1"]:checked'
-  )?.value;
-
-  let checkState2 = document.querySelector(
-    'input[name="name2"]:checked'
-  )?.value;
-  let checkState3 = document.querySelector(
-    'input[name="name3"]:checked'
-  )?.value;
-  let checkState4 = document.querySelector(
-    'input[name="name4"]:checked'
-  )?.value;
+  let checkState = document.querySelector('input[name="name"]:checked').value;
+  let checkState1 = document.querySelector('input[name="name1"]:checked').value;
+  let checkState2 = document.querySelector('input[name="name2"]:checked').value;
+  let checkState3 = document.querySelector('input[name="name3"]:checked').value;
+  let checkState4 = document.querySelector('input[name="name4"]:checked').value;
 
   let message = `<b>ЗАЯВКА С САЙТА</b>\n\n`;
   message += `<b>Cпособ связи: </b>${checkState}\n`;
@@ -108,12 +127,16 @@ form.addEventListener("submit", function (el) {
 });
 
 let currentTab = 0;
+let step = document.getElementsByClassName("step");
+let tab = document.getElementsByClassName("tab");
+let box = document.querySelector(".login-box");
+let warn = document.querySelector(".warn");
+let input = document.querySelector(".maskphone");
 
 showTab(currentTab);
 
 function showTab(n) {
-  const x = document.getElementsByClassName("tab");
-  x[n].style.display = "block";
+  tab[n].style.display = "block";
   if (n == 0) {
     document.getElementById("prevBtn").style.display = "none";
     document.getElementById("nextBtn").style.display = "inline";
@@ -122,7 +145,7 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
     document.getElementById("nextBtn").style.display = "inline";
   }
-  if (n == x.length - 1) {
+  if (n == tab.length - 1) {
     document.getElementById("nextBtn").style.display = "none";
     sendBtn.style.display = "inline-block";
   } else {
@@ -132,61 +155,49 @@ function showTab(n) {
 }
 
 function nextPrev(n) {
-  const x = document.getElementsByClassName("tab");
   if (n == 1 && !validateForm()) return false;
-  x[currentTab].style.display = "none";
+  tab[currentTab].style.display = "none";
   currentTab = currentTab + n;
   showTab(currentTab);
 }
 
 function validateForm() {
-  let x,
-    y,
-    i,
-    z,
-    valid = true;
-  x = document.getElementsByClassName("tab");
-  y = x[currentTab].getElementsByTagName("input");
-  for (i = 0; i < y.length; i++) {
-    if (y[i].value === "") {
-      y[i].className += " invalid";
-      valid = false;
-    }
-  }
-  z = x[currentTab].querySelectorAll('input[type="radio"]');
-  if (y.length > 0) {
-    var checked = false;
-    for (i = 0; i < z.length; i++) {
-      if (z[i].checked) {
+  let b;
+  let valid = true;
+  let checked = false;
+
+  b = tab[currentTab].querySelectorAll('input[type="radio"]');
+  if (b.length > 0) {
+    for (i = 0; i < b.length; i++) {
+      if (b[i].checked) {
         checked = true;
         break;
       }
     }
+
     if (!checked) {
-      document.querySelector(".login-box").className += " invalid";
-      document.querySelector(".warn").style.display = "block";
+      box.className += " invalid";
+      warn.style.display = "block";
       valid = false;
     }
   }
+
   if (valid) {
-    document.getElementsByClassName("step")[currentTab].className += " finish";
-    document.querySelector(".login-box").classList.remove("invalid");
-    document.querySelector(".warn").style.display = "none";
+    step[currentTab].className += " finish";
+    box.classList.remove("invalid");
+    warn.style.display = "none";
   }
   return valid;
 }
 
 function fixStepIndicator(num) {
-  let i,
-    bolProgres = document.getElementsByClassName("step");
-  for (i = 0; i < bolProgres.length; ++i) {
-    bolProgres[i].className = bolProgres[i].className.replace(" active", "");
+  for (let i = 0; i < step.length; ++i) {
+    step[i].className = step[i].className.replace(" active", "");
   }
-  bolProgres[num].className += " active";
+  step[num].className += " active";
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  let input = document.querySelector(".maskphone");
   input.addEventListener("input", mask);
   input.addEventListener("focus", mask);
   input.addEventListener("blur", mask);
@@ -201,11 +212,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
       return i >= val.length ? "" : char;
     });
-
-    if (event.type == "blur") {
-      if (this.value.length == 2) this.value = "";
-    } else {
-      setCursorPosition(this, this.value.length);
-    }
   }
 });
