@@ -5,7 +5,7 @@
   inset: 0;
   background-color: rgba(26, 26, 27, 0.9);
   position: fixed;
-  touch-action: pan-y;
+  /* touch-action: pan-y; */
 }
 
 .login-box {
@@ -24,7 +24,7 @@
   box-sizing: border-box;
   border-radius: 10px;
   opacity: 0.9;
-  touch-action: pan-y;
+  /* touch-action: pan-y; */
 }
 
 .user-box {
@@ -449,7 +449,7 @@ input:-webkit-autofill:active {
   }
 }
 
-@media screen and (max-height: 570px) {
+/* @media screen and (max-height: 570px) {
   .user-box:nth-child(1) {
     margin-top: 5vmin;
     margin-bottom: 10vmin;
@@ -463,4 +463,4 @@ input:-webkit-autofill:active {
   .info > p {
     top: -45%;
   }
-}
+} */

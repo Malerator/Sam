@@ -4,18 +4,7 @@ body {
   background-color: rgb(186, 189, 188);
   display: flex;
   font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
-  touch-action: pan-y;
-}
-
-/* Скрываем scrollbar для Chrome, Safari и Opera */
-* ::-webkit-scrollbar {
-  display: none;
-}
-
-/* Скрываем scrollbar для IE, Edge и Firefox */
-* {
-  -ms-overflow-style: none; /* IE и Edge */
-  scrollbar-width: none; /* Firefox */
+  /* touch-action: pan-y; */
 }
 
 .container {
@@ -33,7 +22,7 @@ body {
   );
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  touch-action: pan-y;
+  /* touch-action: pan-y; */
 }
 
 .head {
