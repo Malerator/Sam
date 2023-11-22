@@ -1,7 +1,3 @@
-html {
-  height: 100%;
-}
-
 .modal {
   font-family: "Gilroy-Bold" Arial, Helvetica, sans-serif;
   display: none;
@@ -15,8 +11,8 @@ html {
 }
 
 .login-box {
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  bottom: 10%;
   left: 50%;
   width: 40%;
   height: 40%;
@@ -396,7 +392,7 @@ input:-webkit-autofill:active {
 @media screen and (max-width: 480px) {
   .login-box {
     box-sizing: border-box;
-    top: 30%;
+    /* top: 30%; */
     width: 95vw;
     height: 40vh;
   }

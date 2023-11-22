@@ -78,8 +78,6 @@ function closePrivacy() {
   container.style.display = "flex";
   privacyPopUp.style.display = "none";
   body.style.backgroundColor = "rgb(186, 189, 188)";
-  body.style.overflow = "visible";
-
   openModal();
 }
 
@@ -136,6 +134,27 @@ let tab = document.getElementsByClassName("tab");
 let box = document.querySelector(".login-box");
 let warn = document.querySelector(".warn");
 let input = document.querySelector(".maskphone");
+
+let height = window.visualViewport.height;
+const viewport = window.visualViewport;
+
+window.addEventListener("scroll", inputBlur);
+window.visualViewport.addEventListener("resize", resizeHandler);
+
+function inputBlur() {
+  input.blur();
+}
+
+function resizeHandler() {
+  if (!/iPhone|iPad|iPod/.test(window.navigator.userAgent)) {
+    height = viewport.height;
+  }
+  box.style.bottom = `${height - viewport.height + 10}px`;
+}
+
+function blurHandler() {
+  box.style.bottom = "10px";
+}
 
 showTab(currentTab);
 
