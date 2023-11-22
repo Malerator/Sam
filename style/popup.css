@@ -5,7 +5,7 @@
   height: 100%;
   overflow: hidden;
   inset: 0;
-  background-color: rgba(26, 26, 27, 0.9);
+  background-color: rgba(26, 26, 27, 0.95);
   /* touch-action: pan-y; */
   /* touch-action: pan-x; */
 }
@@ -392,7 +392,7 @@ input:-webkit-autofill:active {
 @media screen and (max-width: 480px) {
   .login-box {
     box-sizing: border-box;
-    top: 60%;
+    top: 55%;
     width: 95vw;
     height: 40vh;
     background: transparent;
