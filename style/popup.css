@@ -391,10 +391,9 @@ input:-webkit-autofill:active {
 
 @media screen and (max-width: 480px) {
   .login-box {
-    box-sizing: border-box;
     top: 55%;
     width: 95vw;
-    height: 40vh;
+    height: 50vh;
     background: transparent;
   }
   .closeModalBtn {
@@ -452,9 +451,6 @@ input:-webkit-autofill:active {
     font-size: 4em;
     top: 75%;
     right: 45%;
-  }
-  .tab2 {
-    padding-top: 15em;
   }
 }
 
