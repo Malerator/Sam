@@ -222,7 +222,6 @@ h1 {
     padding: 7% 4%;
     /* width: 96%; */
     width: 100vw;
-    height: 100vh;
   }
   .main {
     flex-direction: column;
