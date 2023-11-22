@@ -1,7 +1,6 @@
 body {
   width: 100vw;
-  /* height: 100vh; */
-  height: calc(var(--vios, 1vh) * 100);
+  height: 100vh;
   background-color: rgb(186, 189, 188);
   display: flex;
   font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;

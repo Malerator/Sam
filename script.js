@@ -241,12 +241,3 @@ document.body.addEventListener(
   },
   false
 );
-
-let vh1 = window.innerHeight * 0.01;
-document.documentElement.style.setProperty("--vios", `${vh1}px`);
-
-window.addEventListener("resize", () => {
-  let vh1 = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty("--vios", `${vh1}px`);
-  document.body.style.overflow = "hidden";
-});
