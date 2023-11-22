@@ -453,6 +453,9 @@ input:-webkit-autofill:active {
     top: 85%;
     right: 45%;
   }
+  .alert_desc {
+    margin: 0;
+  }
 }
 
 @media screen and (max-height: 570px) {
