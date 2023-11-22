@@ -411,7 +411,7 @@ input:-webkit-autofill:active {
   #prevBtn,
   #nextBtn,
   .sendBtn {
-    font-size: 16em;
+    font-size: 1.5em;
     font-weight: 900;
   }
   .info p {
