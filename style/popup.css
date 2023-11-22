@@ -453,9 +453,8 @@ input:-webkit-autofill:active {
     top: 75%;
     right: 45%;
   }
-  .alert_desc {
-    margin: 0;
-    margin-top: 5vw;
+  .tab2 {
+    padding-top: 5vw;
   }
 }
 
