@@ -395,7 +395,7 @@ input:-webkit-autofill:active {
   .login-box {
     box-sizing: border-box;
     top: 50%;
-    width: 90vw;
+    width: 95vw;
     height: 40vh;
   }
   .closeModalBtn {
