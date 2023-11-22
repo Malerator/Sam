@@ -400,8 +400,8 @@ input:-webkit-autofill:active {
     height: 40vh;
   }
   .closeModalBtn {
-    top: 72%;
-    right: 2%;
+    top: 90%;
+    right: 50%;
   }
   .login-box .user-box > input {
     padding-left: 2vmin;
