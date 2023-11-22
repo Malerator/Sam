@@ -7,6 +7,7 @@ body {
   display: flex;
   font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
   touch-action: pan-y;
+  touch-action: pan-x;
 }
 
 .container {
