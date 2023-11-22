@@ -212,10 +212,12 @@ h1 {
 }
 
 @media screen and (max-width: 480px) {
+  body {
+    touch-action: pan-x;
+  }
   .container {
     padding: 7% 2%;
     width: 100vw;
-    touch-action: pan-x;
   }
   .main {
     flex-direction: column;
