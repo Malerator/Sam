@@ -219,7 +219,7 @@ h1 {
 
 @media screen and (max-width: 480px) {
   .container {
-    padding: 15% 4%;
+    padding: 7% 4%;
     width: 100vw;
   }
   .main {
