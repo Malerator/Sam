@@ -391,11 +391,11 @@ input:-webkit-autofill:active {
   }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 480px) {
   .login-box {
     box-sizing: border-box;
     top: 50%;
-    width: 95vw;
+    width: 90vw;
     height: 40vh;
   }
   .closeModalBtn {
