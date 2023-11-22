@@ -218,26 +218,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-
-document
-  .querySelector("body")
-  .addEventListener("wheel", preventScroll, { passive: false });
-
-function preventScroll(e) {
-  e.preventDefault();
-  e.stopPropagation();
-
-  return false;
-}
-
-document.body.addEventListener(
-  "touchmove",
-  function (event) {
-    event = event.originalEvent || event;
-
-    if (event.scale > 1) {
-      event.preventDefault();
-    }
-  },
-  false
-);
