@@ -1,7 +1,7 @@
 .modal {
   font-family: "Gilroy-Bold" Arial, Helvetica, sans-serif;
   display: none;
-  overflow: hidden;
+  /* overflow: hidden; */
   inset: 0;
   background-color: rgba(26, 26, 27, 0.9);
   position: fixed;
