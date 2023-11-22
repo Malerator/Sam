@@ -3,13 +3,14 @@ body {
   padding-right: 17px;
   background-color: rgb(186, 189, 188);
   font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
+  /* display: flex; */
   /* touch-action: pan-y; */
 }
 
 .container {
-  display: flex;
-  /* position: absolute; */
+  position: fixed;
   inset: 0;
+  display: flex;
   margin: auto;
   flex-direction: column;
   box-sizing: border-box;
@@ -219,6 +220,7 @@ h1 {
 
 @media screen and (max-width: 480px) {
   .container {
+    /* position: static; */
     padding: 7% 4%;
     width: 100vw;
   }
