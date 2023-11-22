@@ -414,6 +414,12 @@ input:-webkit-autofill:active {
     font-size: 1.5em;
     font-weight: 900;
   }
+  .wrapBtn {
+    top: 72%;
+  }
+  .bar {
+    top: 82%;
+  }
   .info p {
     font-size: 3vmin;
   }
