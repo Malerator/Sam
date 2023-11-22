@@ -1,7 +1,5 @@
 .privacy_popup {
-  display: flex;
   display: none;
-  width: 100vw;
   background-color: rgba(26, 26, 27);
   padding: 7%;
 }
@@ -29,6 +27,6 @@
 
 @media screen and (max-width: 428px) {
   .privacy {
-    width: 100vw;
+    width: 100%;
   }
 }
