@@ -2,16 +2,17 @@ body {
   width: 100vw;
   padding-right: 17px;
   background-color: rgb(186, 189, 188);
-  display: flex;
   font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
   /* touch-action: pan-y; */
 }
 
 .container {
   display: flex;
+  position: absolute;
+  inset: 0;
+  margin: auto;
   flex-direction: column;
   box-sizing: border-box;
-  margin: auto;
   padding: 2%;
   width: 90%;
   height: fit-content;
@@ -219,7 +220,9 @@ h1 {
 @media screen and (max-width: 480px) {
   .container {
     padding: 7% 4%;
-    width: 96%;
+    /* width: 96%; */
+    width: 100vw;
+    height: 100vh;
   }
   .main {
     flex-direction: column;
