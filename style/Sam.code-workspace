@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../проект/Alexei3"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Sam"
+  }
+}
