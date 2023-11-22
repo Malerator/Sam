@@ -51,6 +51,8 @@ form.addEventListener("click", (event) => event.stopPropagation());
 function openModal() {
   popUp.style.display = "flex";
   body.style.overflow = "hidden";
+  body.style.touchAction = "pan-y";
+  body.style.touchAction = "pan-x";
 }
 
 function openAlertOk() {
@@ -134,27 +136,6 @@ let tab = document.getElementsByClassName("tab");
 let box = document.querySelector(".login-box");
 let warn = document.querySelector(".warn");
 let input = document.querySelector(".maskphone");
-
-// let height = window.visualViewport.height;
-// const viewport = window.visualViewport;
-
-// window.addEventListener("scroll", inputBlur);
-// window.visualViewport.addEventListener("resize", resizeHandler);
-
-// function inputBlur() {
-//   input.blur();
-// }
-
-// function resizeHandler() {
-//   if (!/iPhone|iPad|iPod/.test(window.navigator.userAgent)) {
-//     height = viewport.height;
-//   }
-//   box.style.bottom = `${height - viewport.height + 10}px`;
-// }
-
-// function blurHandler() {
-//   box.style.bottom = "10px";
-// }
 
 showTab(currentTab);
 
