@@ -7,9 +7,8 @@ body {
   touch-action: pan-y;
 }
 
-body {
-  position: fixed;
-  overflow-y: scroll;
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .container {
