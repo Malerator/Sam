@@ -50,31 +50,38 @@ form.addEventListener("click", (event) => event.stopPropagation());
 
 function openModal() {
   popUp.style.display = "flex";
+  body.style.overflow = "hidden";
 }
 
 function openAlertOk() {
   alertOk.style.display = "flex";
+  body.style.overflow = "hidden";
 }
 
 function openPrivacy() {
   container.style.display = "none";
   privacyPopUp.style.display = "flex";
   body.style.backgroundColor = "rgb(26, 26, 27)";
+  body.style.overflow = "hidden";
+
   closeModal();
 }
 
 function closeAlertOk() {
   alertOk.style.display = "none";
+  body.style.overflow = "visible";
 }
 
 function closeModal() {
   popUp.style.display = "none";
+  body.style.overflow = "visible";
 }
 
 function closePrivacy() {
   container.style.display = "flex";
   privacyPopUp.style.display = "none";
   body.style.backgroundColor = "rgb(186, 189, 188)";
+  body.style.overflow = "visible";
 
   openModal();
 }
