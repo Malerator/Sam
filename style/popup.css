@@ -391,6 +391,7 @@ input:-webkit-autofill:active {
 
 @media screen and (max-width: 480px) {
   .login-box {
+    box-sizing: content-box;
     top: 55%;
     width: 95vw;
     height: 50vh;
