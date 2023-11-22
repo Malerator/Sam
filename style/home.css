@@ -4,6 +4,7 @@ body {
   background-color: rgb(186, 189, 188);
   display: flex;
   font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
+  touch-action: pan-y;
 }
 
 .container {
@@ -212,9 +213,6 @@ h1 {
 }
 
 @media screen and (max-width: 480px) {
-  body {
-    touch-action: pan-y;
-  }
   .container {
     padding: 7% 2%;
     width: 100vw;
