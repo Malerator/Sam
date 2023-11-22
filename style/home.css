@@ -1,14 +1,11 @@
 body {
   width: 100vw;
   height: 100vh;
+  padding-right: 17px;
   background-color: rgb(186, 189, 188);
   display: flex;
   font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
   touch-action: pan-y;
-}
-
-body::-webkit-scrollbar {
-  display: none;
 }
 
 .container {
