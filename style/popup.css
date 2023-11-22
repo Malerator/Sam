@@ -395,7 +395,7 @@ input:-webkit-autofill:active {
     top: 60%;
     width: 95vw;
     height: 40vh;
-    background-color: transparent;
+    background: transparent;
   }
   .closeModalBtn {
     top: 80%;
