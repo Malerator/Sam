@@ -347,7 +347,7 @@ input:-webkit-autofill:active {
 
 .invalid {
   outline: 1px solid red;
-  outline-offset: 7px;
+  outline-offset: 4px;
 }
 
 .warn {
@@ -355,11 +355,6 @@ input:-webkit-autofill:active {
   top: -25px;
   display: none;
   color: red;
-}
-
-.check.checkbox:required {
-  outline: 1px solid red;
-  outline-offset: 1px;
 }
 
 @media screen and (max-width: 1024px) {
