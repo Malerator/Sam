@@ -24,6 +24,7 @@
   box-sizing: border-box;
   border-radius: 10px;
   opacity: 0.9;
+  touch-action: pan-y;
 }
 
 .user-box {
@@ -391,7 +392,6 @@ input:-webkit-autofill:active {
     top: 50%;
     width: 95vw;
     height: 40vh;
-    touch-action: pan-y;
   }
   .closeModalBtn {
     top: 80%;
