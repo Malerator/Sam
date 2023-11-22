@@ -392,9 +392,10 @@ input:-webkit-autofill:active {
 @media screen and (max-width: 480px) {
   .login-box {
     box-sizing: border-box;
-    top: 55%;
+    top: 60%;
     width: 95vw;
     height: 40vh;
+    background-color: transparent;
   }
   .closeModalBtn {
     top: 80%;
