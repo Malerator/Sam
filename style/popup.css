@@ -459,9 +459,6 @@ input:-webkit-autofill:active {
     top: 75%;
     right: 45%;
   }
-  .alert_desc {
-    color: rgb(236, 235, 233);
-  }
 }
 
 @media screen and (max-height: 570px) {
