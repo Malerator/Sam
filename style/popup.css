@@ -456,8 +456,12 @@ input:-webkit-autofill:active {
   }
   .fa-reply {
     font-size: 4em;
-    top: 90%;
+    top: 75%;
     right: 45%;
+  }
+  .alert_desc {
+    text-align: center;
+    margin-bottom: 3.5em;
   }
 }
 
