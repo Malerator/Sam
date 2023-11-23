@@ -462,6 +462,7 @@ input:-webkit-autofill:active {
   .alert_desc {
     text-align: center;
     margin-bottom: 3.5em;
+    color: aqua;
   }
 }
 
