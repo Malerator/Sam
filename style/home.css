@@ -2,7 +2,9 @@ body {
   width: 100vw;
   padding-right: 17px;
   background: #313030;
-  font-family: "Indie Flower", cursive;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
   color: aliceblue;
 }
 
@@ -23,6 +25,7 @@ body {
 
 .head {
   font-size: 2vw;
+  font-weight: 500;
   color: rgb(57, 57, 131);
 }
 
@@ -56,10 +59,12 @@ body {
 }
 
 .h1 {
+  font-weight: 500;
   font-size: 4vw;
 }
 
 h1 {
+  font-weight: 700;
   font-size: 4vw;
   color: rgb(57, 57, 131);
   margin-bottom: 1em;
