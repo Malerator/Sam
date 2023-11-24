@@ -7,12 +7,11 @@
   inset: 0;
   background-blend-mode: multiply;
   background-color: rgba(26, 26, 27, 0.85);
+
   background-image: url("../images/i5.png");
-  background-position: 200% 5vh;
+  background-position: 50vw 5vh;
   background-repeat: no-repeat;
   background-size: contain;
-  /* touch-action: pan-y; */
-  /* touch-action: pan-x; */
 }
 
 .login-box {
@@ -23,11 +22,16 @@
   height: 40%;
   padding: 3%;
   transform: translate(-50%, -50%);
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle,
     rgba(51, 109, 124, 1) 0%,
     rgba(148, 187, 233, 1) 100%
-  );
+  ); */
+  background: rgba(159, 228, 193, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 135, 57, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border-radius: 10px;
   box-sizing: border-box;
   border-radius: 10px;
   opacity: 0.9;
@@ -396,11 +400,12 @@ input:-webkit-autofill:active {
 
 @media screen and (max-width: 480px) {
   .login-box {
-    box-sizing: content-box;
+    /* box-sizing: content-box; */
+    box-sizing: border-box;
     top: 55%;
     width: 95vw;
     height: 50vh;
-    background: transparent;
+    /* background: transparent; */
   }
   .closeModalBtn {
     top: 80%;
