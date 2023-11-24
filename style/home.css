@@ -132,13 +132,18 @@ h1 {
   box-shadow: 28px 28px 56px #282727, -28px -28px 56px #3a3939;
   font-size: 1.2em;
   text-transform: uppercase;
-  color: white;
+  /* color: white; */
   border: none;
   padding: 1.5vw;
   cursor: pointer;
   border-radius: 10px;
   margin-top: 5vw;
   transition: 0.2s;
+}
+
+.btn_item {
+  color: #202020;
+  text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
 }
 
 .btn:hover {
