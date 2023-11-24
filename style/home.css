@@ -1,12 +1,9 @@
 body {
   width: 100vw;
   padding-right: 17px;
-  /* background-color: rgb(186, 189, 188); */
-  background: #706f76;
-  font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
-  /* display: flex; */
-  /* touch-action: pan-y; */
-  color: aliceblue !important;
+  background: #313030;
+  font-family: "Indie Flower", cursive;
+  color: aliceblue;
 }
 
 .container {
@@ -19,19 +16,9 @@ body {
   padding: 2%;
   width: 80%;
   height: fit-content;
-  /* background: radial-gradient(
-    circle,
-    rgba(51, 109, 124, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
-  );
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-  /* border-radius: 50px;
-  background: linear-gradient(145deg, #65646a, #78777e);
-  box-shadow: 35px 35px 71px #5f5e64, -35px -35px 71px #818088; */
   border-radius: 20px;
-  background: linear-gradient(145deg, #78777e, #65646a);
-  box-shadow: 28px 28px 56px #5b5a60, -28px -28px 56px #85848c;
+  background: #313030;
+  box-shadow: 28px 28px 56px #282727, -28px -28px 56px #3a3939;
 }
 
 .head {
@@ -75,7 +62,6 @@ body {
 h1 {
   font-size: 4vw;
   color: rgb(57, 57, 131);
-  font-weight: 900;
   margin-bottom: 1em;
 }
 
@@ -116,13 +102,13 @@ h1 {
 }
 
 .btn {
-  /* background-color: rgb(57, 57, 131); */
-  border-radius: 10px;
-  background: linear-gradient(145deg, #78777e, #65646a);
-  box-shadow: 19px 19px 38px #5b5a60, -19px -19px 38px #85848c;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background: #313030;
+  box-shadow: 28px 28px 56px #282727, -28px -28px 56px #3a3939;
   font-size: 1.2em;
   text-transform: uppercase;
-  color: rgb(57, 57, 131);
+  color: white;
   border: none;
   padding: 1.5vw;
   cursor: pointer;
@@ -132,14 +118,13 @@ h1 {
 }
 
 .btn:hover {
-  background: linear-gradient(145deg, #65646a, #78777e);
-  box-shadow: 19px 19px 38px #5b5a60, -19px -19px 38px #85848c;
+  background: linear-gradient(145deg, #2c2b2b, #343333);
+  box-shadow: 28px 28px 56px #282727, -28px -28px 56px #3a3939;
   transform: scale(1.1);
-  box-shadow: 41px 4px 8px 0px rgba(34, 60, 80, 0.2);
   transition: 0.2s;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Gilroy-Bold";
   src: url("../fonts/gilroy-Bold.ttf") format("truetype"),
     url("../fonts/gilroy-Bold.woff") format("woff"),
@@ -159,7 +144,7 @@ h1 {
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 @media screen and (max-width: 900px) {
   .img img {
@@ -259,6 +244,9 @@ h1 {
     font-size: 4.5vw;
   }
   .btn {
+    background: #3a3939;
+    padding: 10px 10px;
+    font-size: 1.5em;
     margin-top: 8vw;
     margin-bottom: 5vw;
   }

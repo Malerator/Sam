@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -323,13 +325,23 @@
           </div>
         </div>
         <div class="wrapBtn">
-          <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+          <button
+            class="form_btn"
+            type="button"
+            id="prevBtn"
+            onclick="nextPrev(-1)"
+          >
             НАЗАД
           </button>
-          <button type="button" id="nextBtn" onclick="nextPrev(1)">
+          <button
+            class="form_btn"
+            type="button"
+            id="nextBtn"
+            onclick="nextPrev(1)"
+          >
             ВПЕРЕД
           </button>
-          <button class="sendBtn" type="submit">ВПЕРЕД</button>
+          <button id="sendBtn" class="form_btn" type="submit">ВПЕРЕД</button>
         </div>
         <div class="bar">
           <span class="step"></span>
@@ -341,7 +353,10 @@
       </div>
     </form>
     <div onclick="closeAlertOk()" class="tab2">
-      <p class="alert_desc">Спасибо, мы свяжемся с вами в течении 10 минут;)</p>
+      <p class="alert_desc">
+        Спасибо, мы свяжемся с вами в течении 10 минут <br />
+        <span class="smile">;)</span>
+      </p>
       <img
         class="fa-reply"
         src="./images/close.svg"

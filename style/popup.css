@@ -1,5 +1,4 @@
 .modal {
-  font-family: "Gilroy-Bold" Arial, Helvetica, sans-serif;
   display: none;
   position: fixed;
   height: 100%;
@@ -7,7 +6,6 @@
   inset: 0;
   background-blend-mode: multiply;
   background-color: rgba(26, 26, 27, 0.85);
-
   background-image: url("../images/i5.png");
   background-position: 50vw 5vh;
   background-repeat: no-repeat;
@@ -22,21 +20,13 @@
   height: 40%;
   padding: 3%;
   transform: translate(-50%, -50%);
-  /* background: radial-gradient(
-    circle,
-    rgba(51, 109, 124, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
-  ); */
-  background: rgba(159, 228, 193, 0.35);
-  box-shadow: 0 8px 32px 0 rgba(31, 135, 57, 0.37);
-  backdrop-filter: blur(11.5px);
-  -webkit-backdrop-filter: blur(11.5px);
-  border-radius: 10px;
+  background: rgba(28, 61, 248, 0.6);
+  box-shadow: 0 0 35px 35px rgba(19, 34, 244, 0.37);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   box-sizing: border-box;
   border-radius: 10px;
   opacity: 0.9;
-  /* touch-action: pan-y;
-  touch-action: pan-x; */
 }
 
 .user-box {
@@ -78,63 +68,6 @@
   font-size: 1.5vmin;
 }
 
-#nextBtn {
-  display: inline-block;
-  width: 25%;
-  align-self: center;
-  font-size: 2.5vmin;
-  background-color: inherit;
-  color: #fff;
-  padding: 0.5vmin;
-  border: 0;
-  border-radius: 0.5vmin;
-  cursor: pointer;
-  transition: 0.4s;
-}
-
-#nextBtn:hover {
-  background-color: #454546;
-  transition: 0.4s;
-}
-
-#prevBtn {
-  display: inline-block;
-  width: 25%;
-  align-self: center;
-  font-size: 2.5vmin;
-  background-color: inherit;
-  color: #fff;
-  padding: 0.5vmin;
-  border: 0;
-  border-radius: 0.5vmin;
-  cursor: pointer;
-  transition: 0.4s;
-}
-
-#prevBtn:hover {
-  background-color: #454546;
-  transition: 0.4s;
-}
-
-.sendBtn {
-  display: none;
-  width: 25%;
-  align-self: center;
-  font-size: 2.5vmin;
-  background-color: inherit;
-  color: #fff;
-  padding: 0.5vmin;
-  border: 0;
-  border-radius: 0.5vmin;
-  cursor: pointer;
-  transition: 0.4s;
-}
-
-.sendBtn:hover {
-  background-color: rgb(57, 57, 131);
-  transition: 0.4s;
-}
-
 .closeModalBtn {
   position: absolute;
   right: 28%;
@@ -148,7 +81,7 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 2vmin rgb(133, 135, 137) inset !important;
+  -webkit-box-shadow: 0 0 0 2vmin rgb(17, 109, 201) inset !important;
   -webkit-text-fill-color: #fff;
   caret-color: #fff;
 }
@@ -168,12 +101,12 @@ input:-webkit-autofill:active {
 }
 
 .step.active {
-  background-color: rgb(57, 57, 131);
+  background-color: rgb(227, 63, 13);
   opacity: 1;
 }
 
 .step.finish {
-  background-color: rgb(57, 57, 131);
+  background-color: rgb(26, 224, 55);
 }
 
 .wrapBtn {
@@ -184,6 +117,24 @@ input:-webkit-autofill:active {
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+
+.form_btn {
+  display: none;
+  align-self: center;
+  font-size: 2.5vmin;
+  background-color: inherit;
+  color: #fff;
+  padding: 0.5vmin;
+  border: 1px solid white;
+  border-radius: 0.5vmin;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.form_btn:hover {
+  background-color: rgb(6, 204, 45);
+  transition: 0.4s;
 }
 
 .bar {
@@ -256,10 +207,10 @@ input:-webkit-autofill:active {
   display: block;
   content: attr(data-offlabel);
   position: absolute;
-  top: 9px;
-  right: 3px;
-  color: black;
-  font-size: 14px;
+  top: 6px;
+  right: 5px;
+  color: white;
+  font-size: 18px;
 }
 
 .checkbox + .lb1::after {
@@ -275,8 +226,8 @@ input:-webkit-autofill:active {
 
 .checkbox:checked + .lb1::before {
   content: attr(data-onlabel);
-  left: 4px;
-  top: 7px;
+  left: 10px;
+  top: 6px;
   right: auto;
   color: #fff;
 }
@@ -287,17 +238,18 @@ input:-webkit-autofill:active {
 }
 
 .checkbox + .lb1 {
-  background-color: rgba(57, 57, 131, 0.3);
+  background-color: red;
 }
 .checkbox:checked + .lb1 {
-  background-color: rgb(57, 57, 131);
+  background-color: rgb(6, 204, 45);
 }
 .checkbox:checked + .lb1::before {
-  color: #fff;
+  color: white;
 }
 
 .privacy_btn {
-  color: rgb(57, 57, 131);
+  color: rgb(13, 155, 8);
+  text-decoration: underline;
 }
 
 .thanks {
@@ -341,14 +293,12 @@ input:-webkit-autofill:active {
   color: rgb(14, 126, 44);
 }
 
-/* .alert_ok {
-  display: flex;
-  margin: auto;
-  width: 80%;
-  height: 50%;
-  background-color: #fff;
-  box-sizing: border-box;
-} */
+.smile {
+  display: block;
+  font-size: 2em;
+  transform: rotate(90deg);
+}
+
 .i {
   margin-left: 12%;
 }
@@ -400,15 +350,13 @@ input:-webkit-autofill:active {
 
 @media screen and (max-width: 480px) {
   .login-box {
-    /* box-sizing: content-box; */
     box-sizing: border-box;
     top: 55%;
     width: 95vw;
     height: 50vh;
-    /* background: transparent; */
   }
   .closeModalBtn {
-    top: 80%;
+    top: 85%;
     right: 44%;
   }
   .login-box .user-box > input {
@@ -418,17 +366,15 @@ input:-webkit-autofill:active {
   .login-box .user-box > label {
     font-size: 4vmin;
   }
-  #prevBtn,
-  #nextBtn,
-  .sendBtn {
+  .form_btn {
     font-size: 1.5em;
     font-weight: 900;
   }
   .wrapBtn {
-    top: 72%;
+    top: 80%;
   }
   .bar {
-    top: 82%;
+    top: 93%;
   }
   .info p {
     font-size: 3vmin;
@@ -462,7 +408,8 @@ input:-webkit-autofill:active {
     margin-top: 15vw;
   }
   .wrap_check4 {
-    margin-top: 5vw;
+    margin-top: 7vw;
+    gap: 5vw;
   }
   .fa-reply {
     font-size: 4em;
@@ -470,9 +417,9 @@ input:-webkit-autofill:active {
     right: 45%;
   }
   .alert_desc {
-    text-align: center;
+    font-size: 3em;
     margin-bottom: 3.5em;
-    color: aqua;
+    color: rgb(175, 236, 236);
   }
 }
 

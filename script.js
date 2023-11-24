@@ -29,7 +29,7 @@ const alertOk = document.querySelector(".tab2");
 
 const privacyPopUp = document.querySelector(".privacy_popup");
 
-const sendBtn = document.querySelector(".sendBtn");
+const sendBtn = document.getElementById("sendBtn");
 
 const TOKEN = "5856059976:AAHi68Tu9T8jSghs6j6tlfVk1dZWWPw-PGc";
 
@@ -60,7 +60,7 @@ function openAlertOk() {
 function openPrivacy() {
   container.style.display = "none";
   privacyPopUp.style.display = "flex";
-  body.style.backgroundColor = "rgb(26, 26, 27)";
+  // body.style.backgroundColor = "rgb(26, 26, 27)";
 
   closeModal();
 }
@@ -77,7 +77,7 @@ function closeModal() {
 function closePrivacy() {
   container.style.display = "flex";
   privacyPopUp.style.display = "none";
-  body.style.backgroundColor = "rgb(186, 189, 188)";
+  // body.style.backgroundColor = "rgb(186, 189, 188)";
   openModal();
 }
 
@@ -137,8 +137,11 @@ let input = document.querySelector(".maskphone");
 
 showTab(currentTab);
 
+showTab(currentTab);
+
 function showTab(n) {
-  tab[n].style.display = "block";
+  const x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
   if (n == 0) {
     document.getElementById("prevBtn").style.display = "none";
     document.getElementById("nextBtn").style.display = "inline";
@@ -147,9 +150,11 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
     document.getElementById("nextBtn").style.display = "inline";
   }
-  if (n == tab.length - 1) {
+  if (n == x.length - 1) {
     document.getElementById("nextBtn").style.display = "none";
+    document.getElementById("prevBtn").style.display = "none";
     sendBtn.style.display = "inline-block";
+    sendBtn.innerHTML = "ОТПРАВИТЬ";
   } else {
     document.getElementById("nextBtn").innerHTML = "ВПЕРЕД";
   }
