@@ -2,8 +2,8 @@ body {
   width: 100vw;
   padding-right: 17px;
   background: #313030;
-  font-family: "Montserrat", sans-serif;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 300;
   color: aliceblue;
 }
@@ -19,8 +19,12 @@ body {
   width: 80%;
   height: fit-content;
   border-radius: 20px;
+  border-radius: 50px;
+  /* background: linear-gradient(145deg, #514f4f, #605e5e);
+  box-shadow: 20px 20px 60px #4d4b4b, -20px -20px 60px #686565; */
+  border-radius: 50px;
   background: #313030;
-  box-shadow: 28px 28px 56px #282727, -28px -28px 56px #3a3939;
+  box-shadow: 20px 20px 60px #2a2929, -20px -20px 60px #383737;
 }
 
 .head {
