@@ -1,7 +1,9 @@
 body {
   width: 100vw;
   padding-right: 17px;
-  background-color: rgb(186, 189, 188);
+  /* background-color: rgb(186, 189, 188); */
+  background: #e0e0e0;
+
   font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
   /* display: flex; */
   /* touch-action: pan-y; */
@@ -17,17 +19,16 @@ body {
   padding: 2%;
   width: 90%;
   height: fit-content;
-  /* height: 100vh;
-  height: calc(var(--vios, 1vh) * 100); */
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle,
     rgba(51, 109, 124, 1) 0%,
     rgba(148, 187, 233, 1) 100%
   );
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  /* touch-action: pan-y; */
-  /* touch-action: pan-x; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 35px 35px 70px #bebebe, -35px -35px 70px #ffffff;
 }
 
 .head {

@@ -5,7 +5,12 @@
   height: 100%;
   overflow: hidden;
   inset: 0;
-  background-color: rgba(26, 26, 27, 0.95);
+  background-blend-mode: multiply;
+  background-color: rgba(26, 26, 27, 0.85);
+  background-image: url("../images/i5.png");
+  background-position: 200% 5vh;
+  background-repeat: no-repeat;
+  background-size: contain;
   /* touch-action: pan-y; */
   /* touch-action: pan-x; */
 }
