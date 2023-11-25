@@ -219,6 +219,9 @@ h1 {
 }
 
 @media screen and (max-height: 420px) {
+  body {
+    overflow: auto;
+  }
   .container {
     width: fit-content;
     height: fit-content;
