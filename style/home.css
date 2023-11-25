@@ -23,6 +23,28 @@ body {
   box-shadow: 20px 20px 60px #5e5e5e, -20px -20px 60px #7f7f7f;
 }
 
+.wrap_item-logo {
+  display: flex;
+  align-items: start;
+  gap: 1em;
+}
+
+.logo {
+  display: block;
+  width: 3em;
+}
+
+.item_logo {
+  display: flex;
+  gap: 0.4em;
+  flex-direction: column;
+}
+
+.logo_desc {
+  color: rgb(236, 94, 12);
+  font-size: 0.4em;
+}
+
 .head {
   font-size: 2vw;
   font-weight: 700;
@@ -222,6 +244,24 @@ h1 {
   }
   .img img {
     width: 250px;
+  }
+  .logo {
+    width: 2em;
+    height: 2em;
+  }
+  .item_logo {
+    flex-direction: row;
+    align-items: normal;
+    gap: 0.6em;
+  }
+  .logo_desc {
+    font-size: 0.7em;
+    font-weight: 700;
+  }
+  .wrap_item-logo {
+    flex-direction: column;
+    align-items: start;
+    gap: 0.1em;
   }
   .head {
     font-size: 5vw;
