@@ -4,7 +4,7 @@
   height: 100%;
   overflow: hidden;
   inset: 0;
-  background-color: rgba(26, 26, 27, 0.85);
+  background-color: rgba(26, 26, 27, 0.75);
   background-position: 50vw 5vh;
   background-repeat: no-repeat;
   background-size: contain;
@@ -18,7 +18,7 @@
   height: 40%;
   padding: 3%;
   transform: translate(-50%, -50%);
-  background: rgba(28, 61, 248, 0.6);
+  background: rgba(71, 71, 73, 0.5);
   box-shadow: 0 0 35px 35px rgba(19, 34, 244, 0.37);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -79,7 +79,7 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 2vmin rgb(17, 109, 201) inset !important;
+  -webkit-box-shadow: 0 0 0 2vmin rgb(71, 71, 73) inset !important;
   -webkit-text-fill-color: #fff;
   caret-color: #fff;
 }
@@ -119,19 +119,23 @@ input:-webkit-autofill:active {
 
 .form_btn {
   display: none;
-  align-self: center;
-  font-size: 2.5vmin;
-  background-color: inherit;
-  color: #fff;
-  padding: 0.7vmin;
-  border: 1px solid white;
-  border-radius: 15px;
+  background: #2f2f2f;
+  padding: 10px 10px;
+  margin: 0 auto;
+  width: 35%;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color: #141313;
+  font-size: 1.2em;
+  font-weight: 700;
+  border: none;
   cursor: pointer;
-  transition: 0.4s;
+  border-radius: 10px;
+  transition: 0.2s;
 }
 
-.form_btn:hover {
-  background-color: rgb(6, 204, 45);
+.form_btn:active {
+  background-color: #6e6e6e;
   transition: 0.4s;
 }
 
@@ -208,7 +212,7 @@ input:-webkit-autofill:active {
   top: 6px;
   right: 5px;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .checkbox + .lb1::after {
@@ -236,10 +240,10 @@ input:-webkit-autofill:active {
 }
 
 .checkbox + .lb1 {
-  background-color: red;
+  background-color: rgb(236, 94, 12);
 }
 .checkbox:checked + .lb1 {
-  background-color: rgb(6, 204, 45);
+  background-color: rgba(75, 231, 106, 0.7);
 }
 .checkbox:checked + .lb1::before {
   color: white;
@@ -350,7 +354,7 @@ input:-webkit-autofill:active {
   .login-box {
     box-sizing: border-box;
     top: 55%;
-    width: 95vw;
+    width: 90vw;
     height: 50vh;
   }
   .closeModalBtn {
@@ -406,7 +410,7 @@ input:-webkit-autofill:active {
     margin-top: 15vw;
   }
   .wrap_check4 {
-    margin-top: 7vw;
+    margin-top: 5vw;
     gap: 5vw;
   }
   .fa-reply {
