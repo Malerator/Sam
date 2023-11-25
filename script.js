@@ -31,6 +31,20 @@ const privacyPopUp = document.querySelector(".privacy_popup");
 
 const sendBtn = document.getElementById("sendBtn");
 
+const prevBtn = document.getElementById("prevBtn");
+
+const nextBtn = document.getElementById("nextBtn");
+
+const step = document.getElementsByClassName("step");
+
+const tab = document.getElementsByClassName("tab");
+
+const box = document.querySelector(".login-box");
+
+const warn = document.querySelector(".warn");
+
+const input = document.querySelector(".maskphone");
+
 const TOKEN = "5856059976:AAHi68Tu9T8jSghs6j6tlfVk1dZWWPw-PGc";
 
 const CHAT_ID = "-1001695833016";
@@ -60,8 +74,6 @@ function openAlertOk() {
 function openPrivacy() {
   container.style.display = "none";
   privacyPopUp.style.display = "flex";
-  // body.style.backgroundColor = "rgb(26, 26, 27)";
-
   closeModal();
 }
 
@@ -77,7 +89,6 @@ function closeModal() {
 function closePrivacy() {
   container.style.display = "flex";
   privacyPopUp.style.display = "none";
-  // body.style.backgroundColor = "rgb(186, 189, 188)";
   openModal();
 }
 
@@ -129,34 +140,26 @@ form.addEventListener("submit", function (el) {
 });
 
 let currentTab = 0;
-let step = document.getElementsByClassName("step");
-let tab = document.getElementsByClassName("tab");
-let box = document.querySelector(".login-box");
-let warn = document.querySelector(".warn");
-let input = document.querySelector(".maskphone");
-
-showTab(currentTab);
 
 showTab(currentTab);
 
 function showTab(n) {
-  const x = document.getElementsByClassName("tab");
-  x[n].style.display = "block";
+  tab[n].style.display = "block";
   if (n == 0) {
-    document.getElementById("prevBtn").style.display = "none";
-    document.getElementById("nextBtn").style.display = "inline";
+    prevBtn.style.display = "none";
+    nextBtn.style.display = "inline";
   } else {
     sendBtn.style.display = "none";
-    document.getElementById("prevBtn").style.display = "inline";
-    document.getElementById("nextBtn").style.display = "inline";
+    prevBtn.style.display = "inline";
+    nextBtn.style.display = "inline";
   }
-  if (n == x.length - 1) {
-    document.getElementById("nextBtn").style.display = "none";
-    document.getElementById("prevBtn").style.display = "none";
+  if (n == tab.length - 1) {
+    nextBtn.style.display = "none";
+    prevBtn.style.display = "none";
     sendBtn.style.display = "inline-block";
     sendBtn.innerHTML = "ОТПРАВИТЬ";
   } else {
-    document.getElementById("nextBtn").innerHTML = "ВПЕРЕД";
+    nextBtn.innerHTML = "ВПЕРЕД";
   }
   fixStepIndicator(n);
 }
@@ -174,8 +177,9 @@ function validateForm() {
   let checked = false;
 
   b = tab[currentTab].querySelectorAll('input[type="radio"]');
+
   if (b.length > 0) {
-    for (i = 0; i < b.length; i++) {
+    for (let i = 0; i < b.length; i++) {
       if (b[i].checked) {
         checked = true;
         break;
@@ -188,6 +192,16 @@ function validateForm() {
       valid = false;
     }
   }
+
+  // if (
+  //   (b =
+  //     tab.length - 1 &&
+  //     document.querySelector('input[name="name4"]').checked === true)
+  // ) {
+  //   box.className += " invalid";
+  //   warn.style.display = "block";
+  //   valid = false;
+  // }
 
   if (valid) {
     step[currentTab].className += " finish";

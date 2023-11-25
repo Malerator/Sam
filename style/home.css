@@ -1,7 +1,8 @@
 body {
   width: 100vw;
   padding-right: 17px;
-  background: #313030;
+  background: #6e6e6e;
+  /* background: #313030; */
   /* font-family: "Montserrat", sans-serif; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 300;
@@ -19,20 +20,24 @@ body {
   width: 80%;
   height: fit-content;
   border-radius: 20px;
-  border-radius: 50px;
+  border-radius: 20px;
   /* background: linear-gradient(145deg, #514f4f, #605e5e);
   box-shadow: 20px 20px 60px #4d4b4b, -20px -20px 60px #686565; */
-  border-radius: 50px;
+  /* border-radius: 50px;
   background: #313030;
-  box-shadow: 20px 20px 60px #2a2929, -20px -20px 60px #383737;
+  box-shadow: 20px 20px 60px #2a2929, -20px -20px 60px #383737; */
+  background: linear-gradient(145deg, #636363, #767676);
+  box-shadow: 20px 20px 60px #5e5e5e, -20px -20px 60px #7f7f7f;
 }
 
 .head {
   font-size: 2vw;
   font-weight: 700;
   /* color: rgb(13, 13, 88); */
-  color: #202020;
-  text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
+  /* color: #202020;
+  text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636; */
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
 }
 
 .title {
@@ -57,8 +62,11 @@ body {
 .tel {
   text-decoration: none;
   font-size: 1.5vw;
-  color: #202020;
-  text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
+  font-weight: 900;
+  /* color: #202020;
+  text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636; */
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
 }
 
 .adress {
@@ -69,16 +77,20 @@ body {
 .h1 {
   font-weight: 500;
   font-size: 4vw;
-  color: #202020;
-  text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
+  /* color: #202020;
+  text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636; */
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
 }
 
 h1 {
   font-weight: 700;
   font-size: 4vw;
   /* color: rgb(13, 13, 88); */
-  color: #202020;
-  text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
+  /* color: #202020;
+  text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636; */
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
   margin-bottom: 1em;
 }
 
@@ -122,9 +134,10 @@ h1 {
 .btn {
   border-radius: 20px;
   box-sizing: border-box;
-  background: #313030;
-  box-shadow: 28px 28px 56px #282727, -28px -28px 56px #3a3939;
-  font-size: 1.2em;
+  /* background: #313030;
+  box-shadow: 28px 28px 56px #282727, -28px -28px 56px #3a3939; */
+  background: linear-gradient(145deg, #636363, #767676);
+  box-shadow: 20px 20px 60px #5e5e5e, -20px -20px 60px #7f7f7f;
   text-transform: uppercase;
   /* color: white; */
   border: none;
@@ -136,13 +149,17 @@ h1 {
 }
 
 .btn_item {
-  color: #202020;
-  text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
+  /* color: #202020;
+  text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636; */
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
+  font-weight: 900;
+  font-size: 2em;
 }
 
 .btn:hover {
-  background: linear-gradient(145deg, #2c2b2b, #343333);
-  box-shadow: 28px 28px 56px #282727, -28px -28px 56px #3a3939;
+  /* background: linear-gradient(145deg, #2c2b2b, #343333);
+  box-shadow: 28px 28px 56px #282727, -28px -28px 56px #3a3939; */
   transform: scale(1.1);
   transition: 0.2s;
 }
@@ -269,7 +286,6 @@ h1 {
   .btn {
     background: #3a3939;
     padding: 10px 10px;
-    font-size: 1.5em;
     margin-top: 10vw;
     margin-bottom: 5vw;
   }
@@ -277,5 +293,11 @@ h1 {
     margin-right: 0.2em;
     width: 0.5em;
     height: 0.5em;
+  }
+  .tel {
+    font-size: 0.9em;
+  }
+  .btn_item {
+    font-size: 1.5em;
   }
 }
