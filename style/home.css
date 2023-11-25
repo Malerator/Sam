@@ -67,7 +67,6 @@ body {
   display: flex;
   margin-left: 7px;
   justify-content: space-evenly;
-  /* gap: 1.5em; */
 }
 
 .main {
@@ -158,7 +157,7 @@ h1 {
 
 .btn_item {
   color: rgba(0, 0, 0, 0.6);
-  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.9);
   font-weight: 900;
   font-size: 2em;
 }
