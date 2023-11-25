@@ -84,6 +84,7 @@ function closeAlertOk() {
 function closeModal() {
   popUp.style.display = "none";
   body.style.overflow = "initial";
+  body.style.overflowY = "hidden";
 }
 
 function closePrivacy() {
