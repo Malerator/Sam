@@ -1,5 +1,5 @@
 body {
-  width: 100vw;
+  /* width: 100vw; */
   padding-right: 17px;
   background: #6e6e6e;
   /* background: #313030; */
@@ -258,6 +258,7 @@ h1 {
     position: static;
     padding: 7% 4%;
     width: 100vw;
+    border-radius: 0;
   }
   .main {
     flex-direction: column;
