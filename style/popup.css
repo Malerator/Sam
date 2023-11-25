@@ -436,6 +436,34 @@ input:-webkit-autofill:active {
   }
 }
 
+@media screen and (max-height: 420px) {
+  .login-box {
+    height: 85vh;
+    padding: 10px !important;
+  }
+  .closeModalBtn {
+    top: 2%;
+    right: 14%;
+  }
+  .check__header {
+    font-size: 1em;
+  }
+  .check__item {
+    font-size: 0.8em;
+  }
+  .wrap_check4 {
+    margin-top: 20px;
+  }
+  .login-box .user-box > input {
+    width: 80%;
+    padding-left: 5vmin;
+    font-size: 4vmin;
+  }
+  .login-box .user-box > label {
+    font-size: 4vmin;
+  }
+}
+
 @media screen and (max-height: 570px) {
   .user-box:nth-child(1) {
     margin-top: 5vmin;

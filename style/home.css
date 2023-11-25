@@ -223,8 +223,10 @@ h1 {
     overflow: scroll;
   }
   .container {
+    position: static;
     width: fit-content;
     height: fit-content;
+    border-radius: 0;
   }
   .item-desc {
     font-size: 2.5vw;
