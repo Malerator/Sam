@@ -109,17 +109,16 @@ h1 {
 
 .item {
   display: flex;
-  align-items: baseline;
+  gap: 1em;
   color: #e0dfdc;
 }
 
 .circle {
   box-sizing: border-box;
-  margin-right: 0.3em;
-  width: 0.7em;
-  height: 0.7em;
-  border: 3px solid rgb(236, 94, 12);
-  border-radius: 50%;
+  width: 0.9em;
+  height: 0.9em;
+  border: 2px solid rgb(236, 94, 12);
+  border-radius: 5px;
 }
 
 .item-desc {
@@ -129,7 +128,6 @@ h1 {
 .img img {
   margin-top: 3vw;
   width: 400px;
-  transform: rotate(30deg);
 }
 
 .btn {
@@ -256,7 +254,7 @@ h1 {
 @media screen and (max-width: 480px) {
   .container {
     position: static;
-    padding: 7% 4%;
+    padding: 7% 6%;
     width: 100vw;
     border-radius: 0;
   }
@@ -283,18 +281,20 @@ h1 {
     margin-bottom: 1em;
   }
   .item-desc {
-    font-size: 4.5vw;
+    font-size: 4vw;
   }
   .btn {
     background: #3a3939;
     padding: 10px 10px;
+    margin: 0 auto;
     margin-top: 10vw;
     margin-bottom: 5vw;
+    width: 85%;
   }
   .circle {
-    margin-right: 0.2em;
-    width: 0.5em;
-    height: 0.5em;
+  }
+  .item {
+    gap: 0.5em;
   }
   .tel {
     font-size: 0.9em;
