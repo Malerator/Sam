@@ -137,11 +137,13 @@ input:-webkit-autofill:active {
   transition: 0.2s;
 }
 
-.form_btn:hover {
-  color: rgba(0, 0, 0, 0.6);
-  background: #6e6e6e;
-  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
-  transition: 0.4s;
+@media (hover: hover) {
+  .form_btn:hover {
+    color: rgba(0, 0, 0, 0.6);
+    background: #6e6e6e;
+    text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
+    transition: 0.4s;
+  }
 }
 
 .form_btn:active {
