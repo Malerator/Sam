@@ -220,7 +220,7 @@ h1 {
 
 @media screen and (max-height: 420px) {
   body {
-    overflow: auto;
+    overflow: scroll;
   }
   .container {
     width: fit-content;
