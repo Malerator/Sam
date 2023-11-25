@@ -67,32 +67,31 @@ function openModal() {
   body.style.overflow = "hidden";
 }
 
-function openAlertOk() {
-  body.style.overflow = "hidden";
-  alertOk.style.display = "flex";
-}
-
-function openPrivacy() {
-  body.style.overflow = "hidden";
-  container.style.display = "none";
-  privacyPopUp.style.display = "flex";
-  closeModal();
-}
-
-function closeAlertOk() {
-  body.style.overflow = "initial";
-  alertOk.style.display = "none";
-  body.style.overflowY = "hidden";
-}
-
 function closeModal() {
   popUp.style.display = "none";
   body.style.overflow = "initial";
   body.style.overflowY = "hidden";
 }
 
-function closePrivacy() {
+function openAlertOk() {
+  // body.style.overflow = "hidden";
+  alertOk.style.display = "flex";
+}
+
+function closeAlertOk() {
+  // body.style.overflow = "initial";
+  alertOk.style.display = "none";
+  body.style.overflowY = "hidden";
+}
+
+function openPrivacy() {
+  container.style.display = "none";
+  privacyPopUp.style.display = "flex";
+  closeModal();
   body.style.overflow = "initial";
+}
+
+function closePrivacy() {
   container.style.display = "flex";
   privacyPopUp.style.display = "none";
   openModal();
