@@ -43,6 +43,7 @@ body {
 
 .message {
   display: flex;
+  margin-left: 7px;
   justify-content: space-evenly;
   /* gap: 1.5em; */
 }
