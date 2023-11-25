@@ -246,6 +246,8 @@ h1 {
   }
   .btn {
     background: #3a3939;
+    background: #2d2d2d;
+
     padding: 10px 10px;
     margin: 0 auto;
     margin-top: 10vw;
@@ -260,5 +262,7 @@ h1 {
   }
   .btn_item {
     font-size: 1.5em;
+    color: #202020;
+    text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
   }
 }

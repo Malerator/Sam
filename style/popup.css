@@ -119,15 +119,12 @@ input:-webkit-autofill:active {
 
 .form_btn {
   display: none;
-  /* background-color: rgb(46, 46, 46); */
   padding: 10px 10px;
   margin: 0 auto;
   width: 43%;
   box-sizing: border-box;
   text-transform: uppercase;
   text-align: center;
-  /* color: #242323;
-  text-shadow: -1px -1px 2px rgb(70, 69, 69); */
   color: #202020;
   background-color: #2d2d2d;
   letter-spacing: 0.1em;
