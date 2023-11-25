@@ -38,8 +38,13 @@ body {
 .contact {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  gap: 1em;
+}
+
+.message {
+  display: flex;
+  justify-content: space-evenly;
+  /* gap: 1.5em; */
 }
 
 .main {

@@ -122,7 +122,7 @@ input:-webkit-autofill:active {
   background: #2f2f2f;
   padding: 10px 10px;
   margin: 0 auto;
-  width: 35%;
+  width: 40%;
   box-sizing: border-box;
   text-transform: uppercase;
   color: #141313;
@@ -369,8 +369,7 @@ input:-webkit-autofill:active {
     font-size: 4vmin;
   }
   .form_btn {
-    font-size: 1.5em;
-    font-weight: 900;
+    font-weight: 700;
   }
   .wrapBtn {
     top: 80%;
