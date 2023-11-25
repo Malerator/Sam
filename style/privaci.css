@@ -7,10 +7,10 @@
 
 .privacy {
   margin: auto;
+  width: 100%;
   padding: 5%;
   box-sizing: border-box;
   background-color: rgb(189, 193, 196);
-  width: 100vw;
   border-radius: 5px;
 }
 
