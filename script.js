@@ -68,17 +68,21 @@ function openModal() {
 }
 
 function openAlertOk() {
+  body.style.overflow = "hidden";
   alertOk.style.display = "flex";
 }
 
 function openPrivacy() {
+  body.style.overflow = "hidden";
   container.style.display = "none";
   privacyPopUp.style.display = "flex";
   closeModal();
 }
 
 function closeAlertOk() {
+  body.style.overflow = "initial";
   alertOk.style.display = "none";
+  body.style.overflowY = "hidden";
 }
 
 function closeModal() {
@@ -88,6 +92,7 @@ function closeModal() {
 }
 
 function closePrivacy() {
+  body.style.overflow = "initial";
   container.style.display = "flex";
   privacyPopUp.style.display = "none";
   openModal();
