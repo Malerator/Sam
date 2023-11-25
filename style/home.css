@@ -157,7 +157,7 @@ h1 {
 
 .btn_item {
   color: rgba(0, 0, 0, 0.6);
-  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.9);
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
   font-weight: 900;
   font-size: 2em;
 }
@@ -303,6 +303,6 @@ h1 {
   .btn_item {
     font-size: 1.5em;
     color: #202020;
-    text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
+    text-shadow: -1px -1px 1px #111, 2px 2px 1px #404040;
   }
 }
