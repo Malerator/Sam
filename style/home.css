@@ -25,24 +25,24 @@ body {
 
 .wrap_item-logo {
   display: flex;
-  align-items: start;
-  gap: 1em;
+  align-items: center;
 }
 
 .logo {
   display: block;
-  width: 3em;
+  width: 6em;
 }
 
 .item_logo {
   display: flex;
-  gap: 0.4em;
-  flex-direction: column;
+  position: relative;
 }
 
 .logo_desc {
+  position: absolute;
+  left: 10%;
   color: rgb(236, 94, 12);
-  font-size: 0.4em;
+  font-size: 0.6em;
 }
 
 .head {
@@ -250,17 +250,11 @@ h1 {
     width: 250px;
   }
   .logo {
-    width: 2em;
-    height: 2em;
-  }
-  .item_logo {
-    flex-direction: row;
-    align-items: normal;
-    gap: 0.6em;
+    width: 5em;
+    height: 5em;
   }
   .logo_desc {
-    font-size: 0.7em;
-    font-weight: 700;
+    font-size: 0.5em;
   }
   .wrap_item-logo {
     flex-direction: column;
