@@ -4,19 +4,20 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 300;
   color: aliceblue;
-  overflow-y: hidden !important;
+  overflow-y: hidden;
   touch-action: pan-y;
 }
 
 .container {
+  overflow-y: hidden;
   position: fixed;
   inset: 0;
   display: flex;
   margin: auto;
   flex-direction: column;
-  box-sizing: border-box;
   padding: 2%;
   width: 80%;
+  box-sizing: border-box;
   height: fit-content;
   border-radius: 20px;
   border-radius: 20px;
