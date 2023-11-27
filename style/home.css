@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   padding: 2%;
-  max-width: 80%;
+  width: 80%;
   height: fit-content;
   border-radius: 20px;
   border-radius: 20px;
