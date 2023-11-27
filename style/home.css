@@ -42,11 +42,11 @@ body {
 
 .logo_desc {
   position: absolute;
-  left: 15%;
-  bottom: -12%;
+  left: 5%;
+  bottom: -25%;
   color: rgb(236, 94, 12);
-  font-size: 0.9em;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 1.3em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-style: italic;
   white-space: nowrap;
 }
@@ -227,7 +227,8 @@ h1 {
     margin-bottom: 8vw;
   }
   .btn {
-    margin-top: 15vw;
+    margin-top: 10vw;
+    margin-bottom: 3vw;
   }
   .tel {
     font-size: 1em;
@@ -252,9 +253,9 @@ h1 {
   }
   .logo {
     width: 6em;
-    height: 6em;
   }
   .logo_desc {
+    left: 20%;
     font-size: 0.7em;
   }
   .wrap_item-logo {
@@ -272,7 +273,7 @@ h1 {
     font-size: 3vw;
   }
   .h1 {
-    margin: 0;
+    margin-top: 0.6em;
     font-size: 10vw;
   }
   h1 {
