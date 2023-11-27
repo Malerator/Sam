@@ -251,7 +251,7 @@ h1 {
   }
   .img img {
     width: 250px;
-    margin-top: 0;
+    margin-top: 1em;
   }
   .logo {
     width: 6em;
@@ -275,7 +275,7 @@ h1 {
   }
   .h1 {
     margin-top: 1em;
-    font-size: 10vw;
+    font-size: 9vw;
     line-height: 0;
     margin-bottom: 0.2em;
   }
@@ -286,9 +286,6 @@ h1 {
   }
   .nok {
     font-size: 10vw;
-  }
-  .wrap-item {
-    gap: 1em;
   }
   .item-desc {
     font-size: 4vw;
