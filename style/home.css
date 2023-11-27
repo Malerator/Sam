@@ -325,10 +325,27 @@ h1 {
   .btn_item {
     font-size: 0.9em;
   }
+  .logo {
+    width: 3.5em;
+  }
+  .logo_desc {
+    font-size: 0.6em;
+  }
+  .h1 {
+    font-size: 1.3em;
+  }
+  h1 {
+    margin-bottom: 0.5em;
+  }
+  .wrap-item {
+    gap: 1em;
+  }
   .btn {
+    margin-top: 1.3em;
     padding: 7px;
   }
   .img img {
+    margin-top: 0;
     width: 150px;
   }
 }
