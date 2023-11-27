@@ -115,6 +115,7 @@ h1 {
 .item-box {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -158,6 +159,8 @@ h1 {
   border-radius: 10px;
   margin-top: 5vw;
   transition: 0.2s;
+  align-self: center;
+  width: 80%;
 }
 
 .btn_item {
