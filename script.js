@@ -81,6 +81,7 @@ function openAlertOk() {
 function closeAlertOk() {
   alertOk.style.display = "none";
   body.style.overflowY = "hidden";
+  form.submit();
 }
 
 function openPrivacy() {

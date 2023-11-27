@@ -5,6 +5,7 @@ body {
   font-weight: 300;
   color: aliceblue;
   overflow-y: hidden !important;
+  touch-action: pan-y;
 }
 
 .container {
@@ -168,9 +169,15 @@ h1 {
   transition: 0.2s;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   .img img {
     width: 300px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .img img {
+    width: 200px;
   }
   .head {
     font-size: 4vw;
@@ -216,6 +223,12 @@ h1 {
   }
   .btn {
     margin-top: 15vw;
+  }
+  .tel {
+    font-size: 1em;
+  }
+  .img img {
+    width: 200px;
   }
 }
 
@@ -305,5 +318,23 @@ h1 {
     font-size: 1.5em;
     color: #202020;
     text-shadow: -1px -1px 1px #111, 2px 2px 1px #575656;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .btn_item {
+    font-size: 1.2em;
+  }
+  .img img {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .btn_item {
+    font-size: 1.2em;
+  }
+  .img img {
+    width: 200px;
   }
 }

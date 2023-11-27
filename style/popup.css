@@ -177,6 +177,7 @@ input:-webkit-autofill:active {
 }
 
 .wrap_check4 {
+  margin-top: 3%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2vw;
@@ -435,6 +436,18 @@ input:-webkit-autofill:active {
   }
   .br {
     display: block;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .form_btn {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .form_btn {
+    font-size: 0.9em;
   }
 }
 
