@@ -255,8 +255,8 @@ h1 {
     width: 6em;
   }
   .logo_desc {
-    left: 20%;
-    font-size: 0.7em;
+    left: 5%;
+    font-size: 1em;
   }
   .wrap_item-logo {
     flex-direction: column;
