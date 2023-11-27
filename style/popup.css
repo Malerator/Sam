@@ -22,7 +22,6 @@
   box-shadow: 0 0 35px 35px rgba(19, 34, 244, 0.37);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  box-sizing: border-box;
   border-radius: 10px;
   opacity: 0.9;
 }

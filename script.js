@@ -74,12 +74,11 @@ function closeModal() {
 }
 
 function openAlertOk() {
-  // body.style.overflow = "hidden";
+  body.style.overflow = "hidden";
   alertOk.style.display = "flex";
 }
 
 function closeAlertOk() {
-  // body.style.overflow = "initial";
   alertOk.style.display = "none";
   body.style.overflowY = "hidden";
 }
