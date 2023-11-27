@@ -43,6 +43,7 @@ body {
   left: 10%;
   color: rgb(236, 94, 12);
   font-size: 0.6em;
+  white-space: nowrap;
 }
 
 .head {
@@ -250,11 +251,11 @@ h1 {
     width: 250px;
   }
   .logo {
-    width: 5em;
-    height: 5em;
+    width: 6em;
+    height: 6em;
   }
   .logo_desc {
-    font-size: 0.4em;
+    font-size: 0.7em;
   }
   .wrap_item-logo {
     flex-direction: column;
