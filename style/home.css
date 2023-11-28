@@ -18,7 +18,8 @@ body {
   padding: 2%;
   width: 80%;
   box-sizing: border-box;
-  height: fit-content;
+  /* height: fit-content; */
+  height: 90%;
   border-radius: 20px;
   border-radius: 20px;
   background: linear-gradient(145deg, #636363, #767676);
@@ -245,6 +246,7 @@ h1 {
     padding: 7% 6%;
     width: 100vw;
     border-radius: 0;
+    height: fit-content;
   }
   .main {
     flex-direction: column;
