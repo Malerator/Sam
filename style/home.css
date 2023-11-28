@@ -10,7 +10,6 @@ body {
 
 .container {
   overflow: scroll;
-
   overflow-y: hidden;
   position: fixed;
   inset: 0;
