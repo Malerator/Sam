@@ -242,28 +242,28 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // ////////////////////////////////////запрет масштабирования/////////////////////////////////////////////////
-document
-  .querySelector("body")
-  .addEventListener("wheel", preventScroll, { passive: false });
+// document
+//   .querySelector("body")
+//   .addEventListener("wheel", preventScroll, { passive: false });
 
-function preventScroll(e) {
-  e.preventDefault();
-  e.stopPropagation();
+// function preventScroll(e) {
+//   e.preventDefault();
+//   e.stopPropagation();
 
-  return false;
-}
+//   return false;
+// }
 
-document.body.addEventListener(
-  "touchmove",
-  function (event) {
-    event = event.originalEvent || event;
+// document.body.addEventListener(
+//   "touchmove",
+//   function (event) {
+//     event = event.originalEvent || event;
 
-    if (event.scale > 1) {
-      event.preventDefault();
-    }
-  },
-  false
-);
+//     if (event.scale > 1) {
+//       event.preventDefault();
+//     }
+//   },
+//   false
+// );
 // ////////////////////////////////////////////установка адаптивной высоты экрана с вычетом панели для ввода адреса//
 // let vh1 = window.innerHeight * 0.01;
 // document.documentElement.style.setProperty("--vios", `${vh1}px`);
