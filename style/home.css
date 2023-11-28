@@ -18,9 +18,9 @@ body {
   flex-direction: column;
   padding: 2%;
   width: 80%;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   height: fit-content;
-  height: calc(var(--vios, 1vh) * 90);
+  height: calc(var(--vios, 1vh) * 80);
   border-radius: 20px;
   border-radius: 20px;
   background: linear-gradient(145deg, #636363, #767676);
@@ -177,7 +177,7 @@ h1 {
   transition: 0.2s;
 }
 
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1800px) {
   .img img {
     width: 350px;
   }
@@ -192,7 +192,7 @@ h1 {
     margin-top: 4em;
   }
   .container {
-    height: calc(var(--vios, 1vh) * 75);
+    height: calc(var(--vios, 1vh) * 80);
   }
 }
 
@@ -267,6 +267,7 @@ h1 {
     width: 100vw;
     border-radius: 0;
     height: fit-content;
+    box-sizing: border-box;
   }
   .main {
     flex-direction: column;
