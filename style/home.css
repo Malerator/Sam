@@ -4,13 +4,9 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 300;
   color: aliceblue;
-  overflow-y: hidden;
-  touch-action: pan-y;
 }
 
 .container {
-  overflow: scroll;
-  overflow-y: hidden;
   position: fixed;
   inset: 0;
   display: flex;
@@ -177,25 +173,6 @@ h1 {
   transition: 0.2s;
 }
 
-@media screen and (min-width: 1400px) {
-  .img img {
-    width: 350px;
-  }
-  h1 {
-    font-size: 4em;
-  }
-  .h1 {
-    font-size: 4em;
-    line-height: 0;
-  }
-  .btn {
-    margin-top: 6em;
-  }
-  .container {
-    height: calc(var(--vios, 1vh) * 80);
-  }
-}
-
 @media screen and (max-width: 1024px) {
   .img img {
     width: 300px;
@@ -240,6 +217,7 @@ h1 {
     margin-top: 8vw;
   }
 }
+
 @media screen and (max-width: 768px) {
   .h1 {
     margin-top: 6vw;
@@ -261,7 +239,12 @@ h1 {
 }
 
 @media screen and (max-width: 480px) {
+  body {
+    overflow-y: hidden;
+    touch-action: pan-y;
+  }
   .container {
+    overflow-y: hidden;
     position: static;
     padding: 7% 6%;
     width: 100vw;
