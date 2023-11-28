@@ -16,9 +16,6 @@ body {
   padding: 2%;
   width: 80%;
   height: 75%;
-  /* height: fit-content; */
-  /* height: calc(var(--vios, 1vh) * 80); */
-  border-radius: 20px;
   border-radius: 20px;
   background: linear-gradient(145deg, #636363, #767676);
   box-shadow: 20px 20px 60px #5e5e5e, -20px -20px 60px #7f7f7f;
@@ -264,7 +261,7 @@ h1 {
   }
   .wrap_item-logo {
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     gap: 0.1em;
   }
   .head {
