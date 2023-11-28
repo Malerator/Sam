@@ -9,6 +9,8 @@ body {
 }
 
 .container {
+  overflow: scroll;
+
   overflow-y: hidden;
   position: fixed;
   inset: 0;
@@ -18,8 +20,7 @@ body {
   padding: 2%;
   width: 80%;
   box-sizing: border-box;
-  /* height: fit-content; */
-  height: 90%;
+  height: fit-content;
   border-radius: 20px;
   border-radius: 20px;
   background: linear-gradient(145deg, #636363, #767676);
@@ -174,6 +175,22 @@ h1 {
 .btn:hover {
   transform: scale(1.1);
   transition: 0.2s;
+}
+
+@media screen and (min-width: 1900px) {
+  .img img {
+    width: 350px;
+  }
+  h1 {
+    font-size: 4em;
+  }
+  .h1 {
+    font-size: 4em;
+    line-height: 0;
+  }
+  .btn {
+    margin-top: 4em;
+  }
 }
 
 @media screen and (max-width: 1024px) {
