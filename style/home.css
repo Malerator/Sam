@@ -15,7 +15,8 @@ body {
   flex-direction: column;
   padding: 2%;
   width: 80%;
-  height: fit-content;
+  height: 75%;
+  /* height: fit-content; */
   /* height: calc(var(--vios, 1vh) * 80); */
   border-radius: 20px;
   border-radius: 20px;
@@ -137,7 +138,7 @@ h1 {
 }
 
 .img img {
-  width: 30vw;
+  width: 50vh;
 }
 
 .btn {
@@ -149,7 +150,7 @@ h1 {
   padding: 1.5vw;
   cursor: pointer;
   border-radius: 10px;
-  margin-top: 5vh;
+  margin-top: 4vh;
   transition: 0.2s;
   align-self: center;
   width: 80%;
