@@ -198,16 +198,6 @@ function validateForm() {
     }
   }
 
-  // if (
-  //   (b =
-  //     tab.length - 1 &&
-  //     document.querySelector('input[name="name4"]').checked === true)
-  // ) {
-  //   box.className += " invalid";
-  //   warn.style.display = "block";
-  //   valid = false;
-  // }
-
   if (valid) {
     step[currentTab].className += " finish";
     box.classList.remove("invalid");
@@ -241,43 +231,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// ////////////////////////////////////запрет масштабирования/////////////////////////////////////////////////
-// document
-//   .querySelector("body")
-//   .addEventListener("wheel", preventScroll, { passive: false });
-
-// function preventScroll(e) {
-//   e.preventDefault();
-//   e.stopPropagation();
-
-//   return false;
-// }
-
-// document.body.addEventListener(
-//   "touchmove",
-//   function (event) {
-//     event = event.originalEvent || event;
-
-//     if (event.scale > 1) {
-//       event.preventDefault();
-//     }
-//   },
-//   false
-// );
-// ////////////////////////////////////////////установка адаптивной высоты экрана с вычетом панели для ввода адреса//
-// let vh1 = window.innerHeight * 0.01;
-// document.documentElement.style.setProperty("--vios", `${vh1}px`);
-
-// window.addEventListener("resize", () => {
-//   let vh1 = window.innerHeight * 0.01;
-//   document.documentElement.style.setProperty("--vios", `${vh1}px`);
-//   document.body.style.overflow = "hidden";
-// });
 let vh1 = window.innerHeight * 0.01;
 document.documentElement.style.setProperty("--vios", `${vh1}px`);
 
 window.addEventListener("resize", () => {
   let vh1 = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vios", `${vh1}px`);
-  document.body.style.overflow = "hidden";
+  // document.body.style.overflow = "hidden";
 });
