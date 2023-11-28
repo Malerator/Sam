@@ -14,9 +14,8 @@ body {
   flex-direction: column;
   padding: 2%;
   width: 80%;
-  /* box-sizing: border-box; */
   height: fit-content;
-  height: calc(var(--vios, 1vh) * 80);
+  /* height: calc(var(--vios, 1vh) * 80); */
   border-radius: 20px;
   border-radius: 20px;
   background: linear-gradient(145deg, #636363, #767676);
@@ -30,7 +29,7 @@ body {
 
 .logo {
   display: block;
-  width: 8em;
+  width: 8vw;
 }
 
 .item_logo {
@@ -41,7 +40,7 @@ body {
 
 .logo_desc {
   color: rgb(236, 94, 12);
-  font-size: 1.3em;
+  font-size: 1.3vw;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-style: italic;
   white-space: nowrap;
@@ -62,7 +61,7 @@ body {
 .contact {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1vw;
 }
 
 .message {
@@ -103,7 +102,7 @@ h1 {
   font-size: 4vw;
   color: rgba(0, 0, 0, 0.6);
   text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
-  margin-bottom: 0.6em;
+  margin-bottom: 1.6vw;
 }
 
 .nok {
@@ -120,12 +119,12 @@ h1 {
 .wrap-item {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 2vw;
 }
 
 .item {
   display: flex;
-  gap: 1em;
+  gap: 1vw;
   color: #e0dfdc;
 }
 
@@ -165,7 +164,7 @@ h1 {
   color: rgba(0, 0, 0, 0.6);
   text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
   font-weight: 900;
-  font-size: 2em;
+  font-size: 2vw;
 }
 
 .btn:hover {
@@ -227,7 +226,8 @@ h1 {
     margin-bottom: 8vw;
   }
   .btn {
-    margin-top: 10vw;
+    font-size: 0.6em;
+    margin-top: 7vw;
     margin-bottom: 3vw;
   }
   .tel {
