@@ -8,6 +8,7 @@ body {
 
 .container {
   position: fixed;
+  overflow: hidden;
   inset: 0;
   display: flex;
   margin: auto;
@@ -40,14 +41,14 @@ body {
 
 .logo_desc {
   color: rgb(236, 94, 12);
-  font-size: 1.3vw;
+  font-size: 3vh;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-style: italic;
   white-space: nowrap;
 }
 
 .head {
-  font-size: 2vw;
+  font-size: 2vh;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.6);
   text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
@@ -61,7 +62,7 @@ body {
 .contact {
   display: flex;
   flex-direction: column;
-  gap: 1vw;
+  gap: 1vh;
 }
 
 .message {
@@ -79,34 +80,29 @@ body {
 
 .tel {
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 2.5vh;
   font-weight: 900;
   color: rgb(236, 94, 12);
-}
-
-.adress {
-  font-size: 1vw;
-  color: #e0dfdc;
 }
 
 .h1 {
   display: block;
   font-weight: 500;
-  font-size: 4vw;
+  font-size: 7vh;
   color: rgba(0, 0, 0, 0.6);
   text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
 }
 
 h1 {
   font-weight: 700;
-  font-size: 4vw;
+  font-size: 7vh;
   color: rgba(0, 0, 0, 0.6);
   text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
   margin-bottom: 1.6vw;
 }
 
 .nok {
-  font-size: 5vw;
+  font-size: 9vh;
 }
 
 .item-box {
@@ -119,7 +115,7 @@ h1 {
 .wrap-item {
   display: flex;
   flex-direction: column;
-  gap: 2vw;
+  gap: 3vh;
 }
 
 .item {
@@ -137,12 +133,11 @@ h1 {
 }
 
 .item-desc {
-  font-size: 1.2vw;
+  font-size: 2vh;
 }
 
 .img img {
-  margin-top: 3vw;
-  width: 400px;
+  width: 30vw;
 }
 
 .btn {
@@ -154,22 +149,22 @@ h1 {
   padding: 1.5vw;
   cursor: pointer;
   border-radius: 10px;
-  margin-top: 5vw;
+  margin-top: 5vh;
   transition: 0.2s;
   align-self: center;
   width: 80%;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 .btn_item {
   color: rgba(0, 0, 0, 0.6);
   text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
   font-weight: 900;
-  font-size: 2vw;
-}
-
-.btn:hover {
-  transform: scale(1.1);
-  transition: 0.2s;
+  font-size: 3vh;
 }
 
 @media screen and (max-width: 1024px) {
@@ -244,6 +239,7 @@ h1 {
     touch-action: pan-y;
   }
   .container {
+    overflow-x: auto;
     overflow-y: hidden;
     position: static;
     padding: 7% 6%;
