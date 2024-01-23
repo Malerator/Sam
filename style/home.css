@@ -140,7 +140,8 @@ h1 {
 
 .btn {
   box-sizing: border-box;
-  background: linear-gradient(145deg, #636363, #767676);
+  /* background: linear-gradient(145deg, #636363, #767676); */
+  background-color: rgb(236, 94, 12);
   box-shadow: 20px 20px 60px #5e5e5e, -20px -20px 60px #7f7f7f;
   text-transform: uppercase;
   border: none;
