@@ -45,9 +45,9 @@ const warn = document.querySelector(".warn");
 
 const input = document.querySelector(".maskphone");
 
-const TOKEN = "5856059976:AAHi68Tu9T8jSghs6j6tlfVk1dZWWPw-PGc";
+// const TOKEN = "5856059976:AAHi68Tu9T8jSghs6j6tlfVk1dZWWPw-PGc";
 
-const CHAT_ID = "-100169583301";
+// const CHAT_ID = "-100169583301";
 
 const URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
